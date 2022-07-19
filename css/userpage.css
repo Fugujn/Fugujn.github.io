@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -9,4 +11,15 @@
 
 .img-logo>img {
     width: 100%;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 5px solid yellow;
+}
+
+.list_item>li>a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid gray;
 }
