@@ -1,0 +1,349 @@
+* {
+    font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.list_item {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.container {
+    background-color: rgb(203, 218, 38);
+    padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.sticky-top {
+	position: sticky;
+    z-index: 10000;
+	top: 0;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.col-2 {
+	flex: 0 0 22%;
+    max-width: 22%;
+}
+
+.col-8 {
+	flex: 0 0 78%;
+    max-width: 78%;
+}
+.col-12 {
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+   /* menu 1*/
+ul.list_item > li > a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.menu ul li {
+	margin-left: 40px;
+	list-style: none;
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+    width: 100%;
+}
+ul.list_item > li > a {
+    text-decoration: none;   
+    display: block;
+    text-align: center;
+    position: relative;
+}
+ul.list_item > li > a:hover {
+    color: rgb(16, 63, 172);
+}
+
+.sub:hover .menu_big  {
+    display: block !important;
+}
+.sub {
+    position: relative;
+}
+
+.sub::after {
+    content: "";
+    height: 12px;
+    width: 120%;
+    position: absolute;
+    background-color: transparent;
+}
+
+ul.menu_child { 
+    position: absolute;
+    list-style-type: none;
+    margin-top: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ul.menu_child > li {
+    display: block;
+    text-decoration: none;
+    background-color: #0851bd;
+    padding: 14px 14px;
+    border-bottom: 1px solid gray;  
+    width: 160%;
+    margin: 0;
+    position: sticky;
+    z-index: 100000;
+    
+}
+ul.menu_child > li > a {
+    color: white;
+    text-decoration: none;
+	font-size: 16px;
+    margin-right: 150px;
+}
+ul.menu_child > li > a:hover {
+    color: rgb(203, 218, 38);
+}
+
+.menu_big {
+    display: none;
+} 
+
+div.menu_big::after {
+    content: "";
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #0851bd transparent ;
+    display: block; 
+    bottom: -12px;
+    left: 40px;
+    position: absolute;
+}
+.head2 {  
+    background-image: linear-gradient(#0a5e98, #0771b9);
+}
+.head2__bottom {
+    display: flex; 
+    align-items: center;
+    color: white;
+}
+.number {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+.menu__list { 
+    margin: 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:none;
+    color: black;
+    align-items: center;
+}
+
+.menu__list-item-link {
+    color: white;
+    border-left: 1px solid #06619e; 
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+.menu__list-item-link:hover {
+    color: rgb(203, 218, 38);
+}
+
+.menu__list:last-child {
+    border-right: 1px solid #06619e;  
+}
+
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.request {
+    margin: auto;
+    padding: 16px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #06619e;
+    text-align: center;
+
+
+}
+.column {
+    width: 20%;
+    padding: 24px 14px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row_body {
+    margin: 0 -5px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+.card > a {
+    font-size: 120px;
+    color: rgb(158, 158, 20);
+}
+.card:hover {
+    background-color: yellow;
+}
+
+.menu__list-item:hover .menu_child_2  {
+    display: block !important ;
+}
+.menu__list-item {
+    position: relative;
+}
+ul.menu_child_2 {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    overflow: hidden;
+}
+ul.menu_child_2 > li {
+    display: block;
+    text-decoration: none;
+    background-color: #0851bd;
+    padding: 14px 14px;
+    border-bottom: 1px solid gray;  
+    width: 160%;
+    margin: 0;
+}
+ul.menu_child_2 > li > a {
+    color: white;
+    text-decoration: none;
+	font-size: 16px;
+    margin-right: 150px;
+}
+ul.menu_child_2 > li > a:hover {
+    color: rgb(203, 218, 38);
+}
