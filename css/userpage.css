@@ -63,7 +63,7 @@
 
 .user-zone {
     background-image: url(../images/user_zone_bg.png);
-    background-color: lightgray;
+    background-color: rgba(189, 174, 174, 0.893);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 15%;
