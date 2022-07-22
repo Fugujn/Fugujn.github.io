@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 img {
     width: 100%;
 }
@@ -16,7 +18,7 @@ img {
 }
 
 .container {
-    background-color: rgb(203, 218, 38);
+    background-color: rgb(225, 238, 49);
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +133,7 @@ ul.menu_child>li>a {
 }
 
 ul.menu_child>li>a:hover {
-    color: rgb(203, 218, 38);
+    color: rgb(225, 238, 49);
 }
 
 .menu_big {
@@ -173,7 +175,6 @@ div.menu_big::after {
     font-weight: bold;
     color: yellow;
 }
-
 /* menu2 */
 .menu__list-item:hover .menu_child_2 {
     display: block !important;
@@ -332,8 +333,8 @@ ul.menu_child_2>li>a:hover {
     font-weight: bold;
     color: #06619e;
     text-align: center;
-    border-top: px solid #06619e;
-
+    border-top: 1px solid #06619e;
+    padding-bottom: 28px;
 }
 
 .column {
@@ -344,7 +345,7 @@ ul.menu_child_2>li>a:hover {
 /* Remove extra left and right margins, due to padding */
 .row_body {
     margin: 0 -5px;
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -373,59 +374,109 @@ ul.menu_child_2>li>a:hover {
     text-align: center;
     background-color: #f1f1f1;
 }
-
-.card>a {
-    font-size: 120px;
-    color: rgb(158, 158, 20);
+.card > a > p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #06619e;
+}
+.card>a > i {
+    font-size: 90px;
+    padding: 16px;
+    color: rgb(184, 184, 29);
 }
 
 .card:hover {
     background-color: yellow;
 }
 
-.row_img {
+.main_img {
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin: auto;
-    padding-left: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
 }
-
+.img_container {
+    width: 25%;
+    margin: 10px;
+}
+.row_img {
+    display: flex;
+}
 .col_img {
     overflow: hidden;
     margin: 0 5px;
 }
 
-.column_img img {
-    display: block;
-    cursor: pointer;
-    height: auto;
-}
-
-.column_img {
+.img_container {
     display: inline-block;
-    width: 24%;
     padding: 0px;
     position: relative;
 }
 
-.column_img a img {
-    transform: scale(1);
-    transition: all .2s ease-in-out;
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .2) 80%, transparent);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .8s ease;
 }
 
-.column_img a:hover img {
+.img_container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text-of-img {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;	
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+} 
+
+   /*News*/
+.main_news {
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.row_img_news {
+    display: flex;
+}
+
+.img_news {
+    width: 25%;
+    margin: 16px;
+}
+.col_img_news {
+    overflow: hidden;
+}
+.img_news a .col_img_news img {
+    transform: scale(1);
+    transition: all 1s ease-in;
+}
+
+.img_news .col_img_news:hover img {
     transform: scale(1.5);
 }
-
-.text_absolute {
-    position: absolute;
-    display: block;
-    bottom: 0px;
-    left: 4px;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .2) 80%, transparent);
-    width: calc(100% - 9px);
+.text_news {
+    overflow-wrap: anywhere;
+    margin: 2px 0;
+    font-style: italic;
+    color: rgb(185, 21, 21);
 }
+.text_news_2 {
+    overflow-wrap: anywhere;
+}
+
+
