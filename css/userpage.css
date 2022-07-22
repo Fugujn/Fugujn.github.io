@@ -42,6 +42,11 @@
     width: 100%;
     list-style: none;
     padding: 10px;
+    border-radius: 10px;
+}
+
+.list_item>ul>li:hover {
+    background-color: gainsboro;
 }
 
 .list_item>ul>li>a {
@@ -51,7 +56,7 @@
     padding: 5px;
 }
 
-.list_item>ul>li>a:hover {
+.list_item>ul>li:hover>a {
     color: rgb(86, 72, 241);
 }
 
@@ -71,21 +76,45 @@
     background-position: bottom right;
     background-size: 15%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .user_input {
-    margin-top: 10px;
     width: 100%;
+    position: relative;
+}
+
+.switch_button {
+    width: 15%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.switch_button_language>input {
+    width: 30px;
+    height: 20px;
+    border: none;
+}
+
+.switch_button_language {
+    position: relative;
+    margin-left: 5px;
+}
+
+.switch_button_language>img {
+    position: absolute;
 }
 
 .user_area {
-    width: 50%;
+    width: 42.5%;
     border-right: 2px solid gray;
     margin-left: 20px;
 }
 
 .user_area_text {
     color: rgb(39, 39, 39);
+    margin-left: 5px;
 }
 
 .user_area>ul>li {
@@ -96,12 +125,21 @@
     position: relative;
 }
 
+.insert_keyboard>input {
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
 .insert_keyboard>img {
     position: absolute;
-    margin-right: 10px;
+    margin: 2px;
+    margin-left: 125px;
 }
 
 .user_warning {
-    width: 50%;
+    width: 42.5%;
     margin-left: 20px;
+    bottom: 0px;
+    right: 0px;
 }
