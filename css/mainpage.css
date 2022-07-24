@@ -133,7 +133,7 @@ ul.menu_child>li>a:hover {
 .menu_big {
     display: none;
 }
-div.menu_big::after {
+div.menu_big::after {  /*add after to hover*/
     content: "";
     border-width: 8px;
     border-style: solid;
@@ -249,26 +249,25 @@ ul.menu_child_2>li>a:hover {
     color: rgb(237, 240, 58);
 }
 
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    vertical-align: middle;
-    height: 500px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-
-    position: relative;
+ /* slide show auto */
+.slide {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
     margin-top: 10px;
+    position: relative;
 }
-
+.slide_show {
+    width: 400%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+}
+.slide_show img {
+    width: 25%;
+}
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -283,60 +282,15 @@ ul.menu_child_2>li>a:hover {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+  /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
  /* titles */
 .request {
     margin: auto;
@@ -473,7 +427,7 @@ ul.menu_child_2>li>a:hover {
 }
 .img_news a .col_img_news img {
     transform: scale(1);
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
 }
 
 .img_news .col_img_news:hover img {
