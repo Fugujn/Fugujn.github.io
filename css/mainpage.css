@@ -303,53 +303,52 @@ ul.menu_child_2>li>a:hover {
     padding-bottom: 28px;
 }
   /* the counter card*/
-.column {
-    width: 20%;
-    padding: 54px 14px;
-}
-.row_body {
-    margin: 0 -5px;
-    width: 80%;
+.main_card {
+    align-items: center;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    width: 80%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row_card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+.border_card {
+    padding: 0px 10px;
+    width: 20%;
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+@media screen and (max-width: 900px) {
+    .border_card {
+        width: 60%;
+        display: inline-block;
+        padding-bottom: 20px;
+        margin: auto;
     }
 }
 
 /* Style the counter cards */
-.card {
+.cards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
     text-align: center;
     background-color: #f1f1f1;
+    
 }
-.card > a > p {
+.cards .text-of-cards {
     font-size: 18px;
     font-weight: bold;
     color: #06619e;
 }
-.card>a > i {
+.cards > i {
     font-size: 80px;
     padding: 18px;
     color: rgb(184, 184, 29);
     
 }
-.card:hover {
+.cards:hover {
     background-color: yellow;
 }
   /*img_list*/
@@ -422,16 +421,19 @@ ul.menu_child_2>li>a:hover {
     width: 25%;
     margin: 16px;
 }
+.img_news img {
+    height: 180px;
+}
 .col_img_news {
     overflow: hidden;
 }
 .img_news a .col_img_news img {
     transform: scale(1);
-    transition: all .5s ease-in;
+    transition: all .4s ease-in;
 }
 
 .img_news .col_img_news:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .text_news {
     overflow-wrap: anywhere;
@@ -441,6 +443,7 @@ ul.menu_child_2>li>a:hover {
 }
 .text_news_2 {
     overflow-wrap: anywhere;
+    color: black;
 }
 
 /* arrow right */
@@ -468,9 +471,6 @@ ul.menu_child_2>li>a:hover {
 .row_footer {
     display: flex;
     flex-wrap: wrap;
-}
-.main_footer .row_footer .col_footer > ul {
-    list-style: none;
 }
 .col_footer {
     width: 25%;
