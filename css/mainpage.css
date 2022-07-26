@@ -317,36 +317,44 @@ ul.menu_child_2>li>a:hover {
 .border_card {
     padding: 0px 10px;
     width: 20%;
+    position: relative;
 }
 
 /* Responsive columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 676px) {
     .border_card {
-        width: 60%;
-        display: inline-block;
+        width: 80%;
+        display: block;
         padding-bottom: 20px;
         margin: auto;
     }
 }
-
 /* Style the counter cards */
 .cards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 10px;
     text-align: center;
     background-color: #f1f1f1;
-    
+    padding: 10px;
 }
 .cards .text-of-cards {
+    content: "";
+    position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: #06619e;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
 }
-.cards > i {
+.cards i {
+    width: 100%;
     font-size: 80px;
-    padding: 18px;
+    margin-top: 20px;
+    margin-bottom: 56px;
     color: rgb(184, 184, 29);
-    
+    text-align: center;
+    align-items: center;
 }
 .cards:hover {
     background-color: yellow;
@@ -439,7 +447,10 @@ ul.menu_child_2>li>a:hover {
     overflow-wrap: anywhere;
     margin: 2px 0;
     font-style: italic;
-    color: rgb(185, 21, 21);
+    font-size: 14px;
+    font-weight: 400;
+    color: #06619e;
+    width: 100%;
 }
 .text_news_2 {
     overflow-wrap: anywhere;
