@@ -1,0 +1,43 @@
+/* Responsive columns cards*/
+@media screen and (max-width: 676px) {
+    .border_card {
+        width: 80%;
+        display: block;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+}
+
+/* Responsive footer_1*/
+@media screen and (max-width: 1000px){
+    .col_footer {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .col_footer {
+        width: 100%;
+    }
+}
+/* Responsive footer_2*/
+@media screen and (max-width: 1000px){
+
+    .col25_footer_2 {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px){
+    .col50_footer_2 {
+        width: 100%;
+    }
+}
+     /* Responsive copyright*/
+@media screen and (max-width: 1000px){
+    .col25_copyright {
+        width: 100%;
+    }
+    .col75_copyright {
+        width: 100%;
+    }
+}
