@@ -17,11 +17,11 @@ img {
 /*header*/
 .sticky-top {
     position: sticky;
-    z-index: 1000;
+    z-index: 1;
     top: 0;
 }
 .container {
-    background-color: rgb(225, 238, 49);
+    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -109,13 +109,13 @@ ul.menu_child {
 ul.menu_child li {
     display: block;
     text-decoration: none;
-    background-color: #0851bd;
+    background-color: #0771b9;
     padding: 14px 14px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #71afd5;
     width: 160%;
     margin: 0;
     position: sticky;
-    z-index: 10000;
+    z-index: 10;
 
 }
 ul.menu_child>li>a {
@@ -124,7 +124,7 @@ ul.menu_child>li>a {
     margin-right: 150px;
 }
 ul.menu_child>li>a:hover {
-    color: rgb(225, 238, 49);
+    color: rgb(240, 255, 30);
 }
 .menu_big {
     display: none;
@@ -133,7 +133,7 @@ div.menu_big::after {  /*add after to hover*/
     content: "";
     border-width: 8px;
     border-style: solid;
-    border-color: transparent transparent #0851bd transparent;
+    border-color: transparent transparent #0771b9 transparent;
     display: block;
     bottom: -12px;
     left: 40px;
@@ -146,18 +146,20 @@ div.menu_big::after {  /*add after to hover*/
     position: relative;
     
 }
-.open_banking:hover a::before {
-    width: 100%;
-    transition: all 1s ease-in-out;
-}
-.open_banking a::before {
+.open_banking::before {
     content:"";
     position: absolute;
     background-color: #06619e;
-    bottom: -6px;
-    height: 3px;
-    box-sizing: border-box;
-    width: 0%;
+    top: 22px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 4px;
+}
+.open_banking:hover::before {
+    transform: scaleX(1);
+    transition: linear 0.5s;
 }
 
     /*header_2*/
@@ -213,7 +215,7 @@ div.menu_big::after {  /*add after to hover*/
 }
 
 .menu__list-item-link:hover {
-    color: rgb(237, 240, 58);
+    color: rgb(251, 255, 27);
 }
 
 .menu__list:last-child {
@@ -228,9 +230,9 @@ ul.menu_child_2 {
 
 ul.menu_child_2>li {
     display: block;
-    background-color: #0851bd;
+    background-color: #0771b9;
     padding: 14px 14px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #71afd5;
     width: 160%;
     margin: 0;
 }
@@ -319,9 +321,10 @@ ul.menu_child_2>li>a:hover {
 
 /* Style the counter cards */
 .cards {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #f1f1f1;
+    background: #cad1d3;
     padding: 10px;
 }
 .cards .text-of-cards {
@@ -340,7 +343,7 @@ ul.menu_child_2>li>a:hover {
     font-size: 80px;
     margin-top: 20px;
     margin-bottom: 56px;
-    color: rgb(184, 184, 29);
+    color: #0771b9;
     text-align: center;
     align-items: center;
 }
@@ -371,14 +374,13 @@ ul.menu_child_2>li>a:hover {
     position: relative;
 }
 
-.overlay {
+.overlay{
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .2) 80%, transparent);
     overflow: hidden;
-    width: 100%;
     height:0;
     transition: .8s ease;
 }
@@ -404,24 +406,25 @@ ul.menu_child_2>li>a:hover {
 
    /*img and News*/
 .main_news {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 80%;
     margin: auto;
 }
 
-.row_img_news {
-    display: flex;
-}
-
 .img_news {
-    width: 25%;
-    margin: 16px;
+    height: 290px;
+    width: 270px;
+    margin: 0px 9px 12px;
 }
 .img_news img {
-    height: 180px;
+    height: 160px;
 }
 .col_img_news {
     overflow: hidden;
+    text-align: center;
 }
 .img_news a .col_img_news img {
     transform: scale(1);
@@ -444,7 +447,65 @@ ul.menu_child_2>li>a:hover {
     overflow-wrap: anywhere;
     color: black;
 }
-
+.main_see_more {
+    text-align: center;
+    padding: 20px;
+    
+}
+   /*see more img_news*/
+.see_more {
+    padding: 12px 32px;
+    font-size: 16px;
+    background-color: #0771b9;
+    border: none;
+    color: white;
+    position: relative;
+}
+.news_see_more {
+    display: none;
+    animation: bottom-to-top 1s ease-in;
+}
+.see_more::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 106%;
+    height: 111%;
+    border-top: 2px solid #0771b9;
+    border-bottom: 2px solid #0771b9;
+    transition: linear all 0.3s;
+    transform: scaleX(0);
+}
+.see_more:hover::after {
+    transform: scaleX(1);
+}
+.see_more::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 103%;
+    height: 118%;
+    border-left: 2px solid #0771b9;
+    border-right: 2px solid #0771b9;
+    transition: linear all 0.3s;
+    transform: scaleY(0);
+}
+.see_more:hover::before {
+    transform: scaleY(1);
+    transition-delay: 0.2s;
+}
+@keyframes bottom-to-top {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* arrow right */
 .right {
     transform: rotate(-45deg);
@@ -509,7 +570,7 @@ ul.menu_child_2>li>a:hover {
 
 /*footer_2*/
 .footer_2 {
-    background-color: rgb(225, 238, 49);
+    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 50px 0;
 }
 .main_footer_2 {
@@ -568,7 +629,7 @@ ul.menu_child_2>li>a:hover {
 
  /* copyright */
 .copyright {
-    background-color: rgb(225, 238, 49);
+    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 10px 0;
 }
 .main_copyright {
@@ -576,7 +637,7 @@ ul.menu_child_2>li>a:hover {
     margin: auto;
 }
 .row_copyright {
-    border-top: 1px solid rgb(186, 196, 39);
+    border-top: 1px solid #06619e;
     padding-top: 20px;
     padding-bottom: 10px;
     display: flex;

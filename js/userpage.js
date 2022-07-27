@@ -10,7 +10,6 @@ function Next(){
     else slide = 0;
     slideShow.style.marginLeft = '-' + slide + 'px';
 }
-
 function Previous(){
     if(slide == 0) slide = max;
     else slide -= slideWidth;
@@ -19,3 +18,12 @@ function Previous(){
 setInterval(function() {
     Next();
 }, 3000);
+
+var seeMore = document.querySelector(".js_see_more");
+var More = document.querySelectorAll(".news_see_more");
+var d = 0;
+seeMore.addEventListener("click", function() {
+    for (i = 0; i < 4; i++)
+        More[d++].style.display = "block";
+    if (d == More.length) seeMore.style.display = "none";
+})
