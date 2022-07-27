@@ -667,3 +667,11 @@ ul.menu_child_2>li>a:hover {
     text-decoration: underline;
     color: #06619e;
 }
+marquee {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-style: italic;
+
+}
