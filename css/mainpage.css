@@ -352,13 +352,16 @@ ul.menu_child_2>li>a:hover {
 }
   /*img_list*/
 .main_img {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 70%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
-.img_container {
-    width: 25%;
+.img_container{
+    width: 240px;
     margin: 10px;
 }
 .row_img {
@@ -403,7 +406,12 @@ ul.menu_child_2>li>a:hover {
     text-align: center;
     overflow: anywhere;
 } 
-
+.text-new {
+    text-align: center;
+    color: #06619e;
+    font-weight: bold;
+    display: none;
+}
    /*img and News*/
 .main_news {
     display: flex;

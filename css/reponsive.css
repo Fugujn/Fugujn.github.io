@@ -70,22 +70,19 @@
         transform: translateX(0%);
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 867px){
     .img_container {
-        width: 100%;
         animation: left 1.5s ease-in;
         animation-delay: 1s;
-    }
-    .row_img {
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-    }
-    .overlay {
-        display: block;
     }
     .img_container:nth-child(2), .img_container:nth-child(4) {
         animation: right 1.5s ease-in;
         animation-delay: 1s;
+    }
+    .text-new {
+        display: block;
+    }
+    .img_container:hover{
+        display: none;
     }
 }

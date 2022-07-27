@@ -17,7 +17,7 @@ function Previous(){
 }
 setInterval(function() {
     Next();
-}, 3000);
+}, 4000);
 
 var seeMore = document.querySelector(".js_see_more");
 var More = document.querySelectorAll(".news_see_more");
