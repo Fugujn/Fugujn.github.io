@@ -51,7 +51,6 @@ img {
     margin: 0 auto;
 }
 
-
     /* menu_1*/
 .list_item {
     display: flex;
@@ -351,7 +350,7 @@ ul.menu_child_2>li>a:hover {
   /*img_list*/
 .main_img {
     align-items: center;
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding-bottom: 30px;
 }
@@ -364,12 +363,11 @@ ul.menu_child_2>li>a:hover {
 }
 .col_img {
     overflow: hidden;
-    margin: 0 5px;
+    padding: 0 4px;
 }
 
 .img_container {
     display: inline-block;
-    padding: 0px;
     position: relative;
 }
 
@@ -392,7 +390,7 @@ ul.menu_child_2>li>a:hover {
 
 .text-of-img {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     position: absolute;
     bottom: 0;	
@@ -401,6 +399,7 @@ ul.menu_child_2>li>a:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    overflow: anywhere;
 } 
 
    /*img and News*/
