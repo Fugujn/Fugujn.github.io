@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./images/shortcut_icon.jpg">
+    <link rel="stylesheet" href="./css/reponsive.css">
     <script src='main.js'></script>
 </head>
 
@@ -25,14 +26,18 @@
             <div class="header__top">
                 <div class="grid">
                     <div class="row">
-                        <div class="col-2">
-                            <img src="./images/p&qbank_logo.png">
+                        <div class="col-3">
+                            <a href="">
+                                <img src="./images/p&qbank_logo.png">
+                            </a>
                         </div>
-                        <div class="col-8 menu">
+                        <div class="col-9 menu">
                             <ul class="list_item">
                                 <li class="sub">
                                     <a href="">
-                                        <i class="fa-regular fa-credit-card"></i> Thẻ
+                                        <i
+                                            class="fa-regular fa-credit-card animate__animated animate__headShake animate__infinite animate__slower "></i>
+                                        Thẻ
                                     </a>
                                     <div class="menu_big">
                                         <ul class="menu_child">
@@ -44,7 +49,9 @@
                                 </li>
                                 <li class="sub">
                                     <a href="">
-                                        <i class="fa-regular fa-user"></i> Cá nhân
+                                        <i
+                                            class="fa-regular fa-user animate__animated animate__headShake animate__infinite animate__slower"></i>
+                                        Cá nhân
                                     </a>
                                     <div class="menu_big">
                                         <ul class="menu_child">
@@ -56,7 +63,9 @@
                                 </li>
                                 <li class="sub">
                                     <a href="">
-                                        <i class="fa-solid fa-users"></i> Doanh nghiệp
+                                        <i
+                                            class="fa-solid fa-users animate__animated animate__headShake animate__infinite animate__slower"></i>
+                                        Doanh nghiệp
                                     </a>
                                     <div class="menu_big">
                                         <ul class="menu_child">
@@ -67,14 +76,12 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href=""> <i class="fa-solid fa-hand-holding-dollar"></i> Đầu tư</a>
+                                    <a href=""> <i
+                                            class="fa-solid fa-hand-holding-dollar animate__animated animate__headShake animate__infinite animate__slower"></i>
+                                        Đầu tư</a>
                                 </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-regular fa-money-bill-1"></i> Ngân hàng số
-                                    </a>
-                                </li>
-                                <li><a href="./userpage.html">Online Banking</a></li>
+
+                                <li class="open_banking"><a href="./userpage.html">OPEN BANKING</a></li>
                             </ul>
                         </div>
                     </div>
@@ -86,7 +93,7 @@
                 <div class="head2__bottom">
                     <div class="header__hotline">
                         <i class="fa-solid fa-phone animate__animated animate__tada animate__infinite"></i>
-                        Trung tâm hỗ trợ dịch vụ khách hàng: <span class="number">1900 1900</span>
+                        Trung tâm hỗ trợ dịch vụ khách hàng: <span class="number_phone">1900 1900</span>
                     </div>
                     <div class="header__menu">
                         <ul class="menu__list">
@@ -104,184 +111,534 @@
                                     <li><a href="">Tổng quan</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#">Cộng đồng</a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#">Tuyển dụng</a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#">Tuyển dụng</a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#"><i
-                                        class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#"><i
-                                        class="fa-brands fa-facebook"></i></a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link" href="#"><i
-                                        class="fa-brands fa-youtube"></i></a></li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="#">Cộng đồng</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="#">Liên hệ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="https://www.facebook.com/phuchandsom"
+                                    target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-item-link" href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="header__social">
-
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-
-            <img src="./images/test2.png" style="width:100%">
-
+    <section class="slide">
+        <div class="direction">
+            <a class="prev" onclick="Previous();">❮</a>
+            <a class="next" onclick="Next()"">❯</a>
         </div>
-
-        <div class="mySlides fade">
-
-            <img src="./images/test3.png" style="width:100%">
-
+        <div class=" slide_show">
+                <img src="./images/test1.jpg" alt="">
+                <img src="./images/test3.png" alt="">
+                <img src="./images/test4.png" alt="">
+                <img src="./images/ads4.jpeg" alt="">
         </div>
-
-        <div class="mySlides fade">
-
-            <img src="./images/test4.png" style="width:100%">
-
+    </section>
+    <section class="help_container">
+        <div class="search_support">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Chúng tôi có thể giúp gì cho bạn?">
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <div class="row_body">
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-regular fa-money-bill-1"></i></a>
-                <p>LÃI SUẤT</p>
+    </section>
+    <section class="main_card">
+        <div class="row_card">
+            <div class="border_card">
+                <a href="">
+                    <div class="cards">
+                        <i class="fa-solid fa-money-bill-1-wave animate__animated animate__pulse animate__infinite"></i>
+                        <div class="text-of-cards">
+                            LÃI SUẤT
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="border_card">
+                <a href="">
+                    <div class="cards">
+                        <i class="fa-solid fa-credit-card animate__animated animate__pulse animate__infinite"></i>
+                        <div class="text-of-cards">
+                            THANH TOÁN
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="border_card">
+                <a href="">
+                    <div class="cards">
+                        <i
+                            class="fa-solid fa-arrow-right-arrow-left animate__animated animate__pulse animate__infinite"></i>
+                        <div class="text-of-cards">
+                            CHUYỂN TIỀN
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="border_card">
+                <a href="">
+                    <div class="cards">
+                        <i
+                            class="fa-solid fa-circle-dollar-to-slot animate__animated animate__pulse animate__infinite"></i>
+                        <div class="text-of-cards">
+                            TIẾT KIỆM
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="border_card">
+                <a href="">
+                    <div class="cards">
+                        <i class="fa-solid fa-chart-column animate__animated animate__pulse animate__infinite"></i>
+                        <div class="text-of-cards">
+                            CHỨNG KHOÁN
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-regular fa-money-bill-1"></i></a>
-                <p>LÃI SUẤT</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-regular fa-money-bill-1"></i></a>
-                <p>LÃI SUẤT</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-regular fa-money-bill-1"></i></a>
-                <p>LÃI SUẤT</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-regular fa-money-bill-1"></i></a>
-                <p>LÃI SUẤT</p>
-            </div>
-        </div>
-    </div>
-    <div class="request">
+    </section>
+    <h1 class="request animate__animated animate__slideInLeft animate__delay-1s">
         BẠN CẦN GÌ
-    </div>
-    <div class="row_img">
-        <div class="column_img">
+    </h1>
+    <section class="main_img">
+        <div class="img_container">
             <a href="">
                 <div class="col_img">
-                    <img src="./images/test1.jpg" alt="Snow" style="width:100%">
+                    <img src="./images/vay.jpg" alt="Vay kinh doanh">
                 </div>
-                <div class="text_absolute">
-                    <h2>MỞ THẺ</h2>
+                <div class="overlay">
+                    <div class="text-of-img">VAY KINH DOANH</div>
+                </div>
+                <div class="text-new">
+                    VAY KINH DOANH
                 </div>
             </a>
         </div>
-        <div class="column_img">
+
+
+        <div class="img_container">
             <a href="">
                 <div class="col_img">
-                    <img src="./images/test1.jpg" alt="Snow" style="width:100%">
+                    <img src="./images/baohiem.jpg" alt="bảo hiểm nhân thọ">
                 </div>
-                <div class="text_absolute">
-                    <h2>MỞ THẺ</h2>
+                <div class="overlay">
+                    <div class="text-of-img">BẢO HIỂM NHÂN THỌ</div>
+                </div>
+                <div class="text-new">
+                    BẢO HIỂM NHÂN THỌ
                 </div>
             </a>
         </div>
-        <div class="column_img">
+
+        <div class="img_container">
             <a href="">
                 <div class="col_img">
-                    <img src="./images/test1.jpg" alt="Snow" style="width:100%">
+                    <img src="./images/vayxe.jpg" alt="Vay mua xe">
                 </div>
-                <div class="text_absolute">
-                    <h2>MỞ THẺ</h2>
+                <div class="overlay">
+                    <div class="text-of-img">VAY MUA XE</div>
+                </div>
+                <div class="text-new">
+                    VAY MUA XE
                 </div>
             </a>
         </div>
-        <div class="column_img">
+
+        <div class="img_container">
             <a href="">
                 <div class="col_img">
-                    <img src="./images/test1.jpg" alt="Snow" style="width:100%">
+                    <img src="./images/mothe.jpg" alt="Snow">
                 </div>
-                <div class="text_absolute">
-                    <h2>MỞ THẺ</h2>
+                <div class="overlay">
+                    <div class="text-of-img">MỞ THẺ</div>
+                </div>
+                <div class="text-new">
+                    MỞ THẺ
                 </div>
             </a>
         </div>
+
+    </section>
+
+    <h1 class="request animate__animated animate__slideInLeft animate__delay-3s">
+
+        TIN TỨC - HOẠT ĐỘNG
+    </h1>
+
+    <section class="main_news">
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news1.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    VAY TIỀN P&Q BANK
+                </div>
+                <div class="text_news_2">
+                    Không cần chứng minh thu nhập, từ nay khách hàng của Ngân hàng P&Q bank có thể vay tối đa 50
+                    triệu đồng chỉ với giấy chứng nhận đăng ký xe máy
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news2.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    CHÍNH SÁCH P&QBANK
+                </div>
+                <div class="text_news_2">
+                    Vay vốn tín chấp theo lương là hình thức vay vốn không cần tài sản thế chấp
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news3.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG CỘNG ĐỒNG
+                </div>
+                <div class="text_news_2">
+                    Ngân hàng P&Q bank trao tặng các suất quà cho Công đoàn và công nhân
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news4.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG CỘNG ĐỒNG
+                </div>
+                <div class="text_news_2">
+                    P&Qbank cùng hoạt động tri ân nhân dịp kỷ niệm
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news5.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    P&QBANKING THÔNG BÁO
+                </div>
+                <div class="text_news_2">
+                    P&Qbank thông báo phát hành hóa đơn điện tử thay thế hóa đơn giấy
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news6.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    ĐỒNG HÀNH CÙNG TAM NÔNG
+                </div>
+                <div class="text_news_2">
+                    Theo chân đồng vốn tín dụng cùng P&Q Banking
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news7.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG P&QBANKING
+                </div>
+                <div class="text_news_2">
+                    Chi hội Thẻ ngân hàng: Bàn giải pháp tháo gỡ khó khăn ảnh hưởng đến sự phát triển của thẻ thanh
+                    toán
+                </div>
+            </a>
+        </div>
+        <div class="img_news">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news8.jpeg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    BIỆN PHÁP
+                </div>
+                <div class="text_news_2">
+                    Bổ sung quy định phát hành thẻ bằng phương thức điện tử
+                </div>
+            </a>
+        </div>
+
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news1.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    VAY TIỀN P&Q BANK
+                </div>
+                <div class="text_news_2">
+                    Không cần chứng minh thu nhập, từ nay khách hàng của Ngân hàng P&Q bank có thể vay tối đa 50
+                    triệu đồng chỉ với giấy chứng nhận đăng ký xe máy
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news2.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    CHÍNH SÁCH P&QBANK
+                </div>
+                <div class="text_news_2">
+                    Vay vốn tín chấp theo lương là hình thức vay vốn không cần tài sản thế chấp
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news3.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG CỘNG ĐỒNG
+                </div>
+                <div class="text_news_2">
+                    Ngân hàng P&Q bank trao tặng các suất quà cho Công đoàn và công nhân
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news4.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG CỘNG ĐỒNG
+                </div>
+                <div class="text_news_2">
+                    P&Qbank cùng hoạt động tri ân nhân dịp kỷ niệm
+                </div>
+            </a>
+        </div>
+
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news5.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    P&QBANKING THÔNG BÁO
+                </div>
+                <div class="text_news_2">
+                    P&Qbank thông báo phát hành hóa đơn điện tử thay thế hóa đơn giấy
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news6.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    ĐỒNG HÀNH CÙNG TAM NÔNG
+                </div>
+                <div class="text_news_2">
+                    Theo chân đồng vốn tín dụng cùng P&Q Banking
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news7.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    HOẠT ĐỘNG P&QBANKING
+                </div>
+                <div class="text_news_2">
+                    Chi hội Thẻ ngân hàng: Bàn giải pháp tháo gỡ khó khăn ảnh hưởng đến sự phát triển của thẻ thanh
+                    toán
+                </div>
+            </a>
+        </div>
+        <div class="img_news news_see_more">
+            <a href="">
+                <div class="col_img_news">
+                    <img src="./images/news8.jpeg" alt="Snow" style="width:100%">
+                </div>
+                <div class="text_news">
+                    BIỆN PHÁP
+                </div>
+                <div class="text_news_2">
+                    Bổ sung quy định phát hành thẻ bằng phương thức điện tử
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="main_see_more">
+        <button class="see_more js_see_more">
+            Xem thêm
+        </button>
     </div>
+    <marquee width="90%" behavior="alternate">
+        Ngân hàng P&Q BANK chắc chắn đảm bảo an toàn, lợi ích khi đăng ký tài khoản và sử dụng thẻ tín dụng tại đây!
+    </marquee>
+    <section class="install">
+        <div class="install_container">
+            <div class="row_install">
+                <div class="col25_sign_install">
+                    <div class="sign_up_email">
+                        <h3>Đăng ký nhận thông tin từ P&Q</h3>
+                    </div>
+                </div>
+                <div class="col50_sign_install">
+                    <div class="sign_up_email_text">
+                        <input type="text" placeholder="Email của bạn">
+                        <button class="sign_up_button">
+                            <a href="#">ĐĂNG KÝ</a> 
+                        </button>
+                    </div>
+                </div>
+                <div class="col25_sign_install">
+                    <div class="install_banking">
+                        <h3>Cài đặt ứng dụng P&Q Internet</h3>
+                        <img src="./images/ios_app.png" alt="IOS">
+                        <img src="./images/googleplay_app.png" alt="Android">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_1">
+        <div class="main_footer">
+            <div class="row_footer">
+                <div class="col_footer">
+                    <h4>Giới thiệu</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Tổng quan</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sơ đồ tổ chức</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sứ mệnh – Tầm nhìn</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Cơ cấu quản trị Ngân hàng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ban lãnh đạo P&Q Bank</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Danh hiệu Thành tích</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Cá nhân</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiết kiệm</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tín dụng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm thẻ</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ưu đãi thẻ</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Bảo hiểm</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Dịch vụ chuyển, nhận tiền</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Doanh nghiệp</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tín dụng doanh nghiệp</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Bảo lãnh</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Thanh toán quốc tế</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Truy cập nhanh</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Lãi suất</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Biểu phí - Hạn mức</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tỷ giá ngoại tệ - giá vàng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tài liệu - biểu mẫu</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tra cứu Hóa đơn điện tử</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tra cứu Thư bảo lãnh</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Internet Banking</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Mạng lưới</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer_2">
+        <div class="main_footer_2">
+            <div class="row_footer_2">
+                <div class="col25_footer_2">
+                    <div class="logo_footer">
+                        <a href=""><img src="./images/internet_banking_logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col50_footer_2">
+                    <div>
+                        <h4>Ngân hàng CNTT P&Q</h4>
+                        <p>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</p>
+                        <p>ĐT: 0328877290</p>
+                        Email:
+                        <a href="mailto:trongphuc1321@gmail.com">
+                            trongphuc1321@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="col25_footer_2">
+                    <div>
+                        <h4>Liên kết nhanh</h4>
+                        <div class="social_link">
+                            <a href="https://www.facebook.com/phuchandsom" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="copyright">
+        <div class="main_copyright">
+            <div class="row_copyright">
+                <div class="col25_copyright">
+                    <a href="">
+                        <p>Điều khoản & Điều kiện sử dụng</p>
+                    </a>
+                </div>
+                <div class="col75_copyright">
+                    <p>Copyright &copy; 2022 P&Qbank. All right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <div class="request">
-        TIN TỨC - SỰ KIỆN
-    </div>
-    <div>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-        <p>awegeg</p>
-    </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script src="./js/userpage.js"></script>
 
 </body>
 

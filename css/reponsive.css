@@ -1,0 +1,112 @@
+
+@media screen and (max-width: 676px) {
+    .help_container {
+        justify-content: center; 
+    }
+}
+
+/* Responsive columns cards*/
+@media screen and (max-width: 676px) {
+  .cards i {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 967px) {
+    .border_card {
+        width: 50%;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .cards .text-of-cards {
+        padding-bottom: 10px;
+    }
+}
+ /*Reponsive signup email and install */
+@media screen and (max-width: 1340px){
+    .install_container {
+        text-align: center;
+    }
+    .col25_sign_install {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .col50_sign_install {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .col25_sign_install img {
+        width: 20%;
+    }
+}
+/* Responsive footer_1*/
+@media screen and (max-width: 1000px){
+    .col_footer {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .col_footer {
+        width: 100%;
+    }
+}
+/* Responsive footer_2*/
+@media screen and (max-width: 1000px){
+
+    .col25_footer_2 {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px){
+    .col50_footer_2 {
+        width: 100%;
+    }
+}
+     /* Responsive copyright*/
+@media screen and (max-width: 1000px){
+    .col25_copyright {
+        width: 100%;
+    }
+    .col75_copyright {
+        width: 100%;
+    }
+}
+@keyframes left {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes right {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@media screen and (max-width: 867px){
+    .img_container {
+        animation: left 1.5s ease-in;
+        animation-delay: 1s;
+    }
+    .img_container:nth-child(2), .img_container:nth-child(4) {
+        animation: right 1.5s ease-in;
+        animation-delay: 1s;
+    }
+    .text-new {
+        display: block;
+    }
+    .img_container:hover{
+        display: none;
+    }
+}
