@@ -288,7 +288,28 @@ ul.menu_child_2>li>a:hover {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+ /* support to help */
+.help_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    display: inline-block;
+}
+.search_support i{
+    font-size: 30px;
+    color: gray;
+    position: absolute;
 
+}
+.search_support input {
+    width: 460px;
+    border: none;
+    font-size: 30px;
+    line-height: 28px;
+    outline: none;
+    position: relative;
+    left: 38px;
+}
  /* titles */
 .request {
     margin: auto;
@@ -310,7 +331,7 @@ ul.menu_child_2>li>a:hover {
 .row_card {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0px;
+    padding: 40px 0px;
 }
 .border_card {
     padding: 0px 10px;
@@ -514,6 +535,49 @@ ul.menu_child_2>li>a:hover {
         transform: translateY(0);
     }
 }
+ /*sign up email and install */
+ .install {
+    background-color: #f1f3f2; 
+    padding: 4px 0;
+}
+.install_container {
+    width: 80%;
+    margin: auto;
+}
+.row_install {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col25_sign_install {
+    width: 25%;
+    margin-top: 3px;
+}
+.col50_sign_install {
+    width: 50%;
+}
+.col25_sign_install img {
+    width: 40%;
+    
+}
+.sign_up_email_text input {
+    width: 30%;
+    padding: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #cad1d3;
+}
+.sign_up_button {
+    border: none;
+    padding: 8px 10px;
+    background-color: #06619e;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sign_up_button a {
+    color: white;
+}
+
 /* arrow right */
 .right {
     transform: rotate(-45deg);
@@ -673,5 +737,4 @@ marquee {
     justify-content: center;
     font-size: 16px;
     font-style: italic;
-
 }
