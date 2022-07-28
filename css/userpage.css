@@ -91,19 +91,44 @@
     right: 0px;
 }
 
-.switch_button_language>input {
+#vietnamese {
+    background-image: url(../images/Vietnamse.png);
+    background-repeat: no-repeat;
+    background-position: center;
     width: 30px;
     height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
     border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 
-.switch_button_language {
-    position: relative;
-    margin-left: 5px;
+#vietnamese:active {
+    background-image: url(../images/Vietnamse.png);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
-.switch_button_language>img {
-    position: absolute;
+#english {
+    background-image: url(../images/Engish.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#english:active {
+    background-image: url(../images/Engish.png);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .user_area {
