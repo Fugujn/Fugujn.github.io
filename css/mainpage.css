@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
@@ -345,7 +348,7 @@ ul.menu_child_2>li>a:hover {
     border-radius: 4px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
-    background: #cad1d3;
+    background: #e3e6e6;
     padding: 10px;
 }
 .cards .text-of-cards {
@@ -737,4 +740,78 @@ marquee {
     justify-content: center;
     font-size: 16px;
     font-style: italic;
+}
+/*button chat*/
+#chat {
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    font-size: 20px;
+    padding: 8px ;
+    background-color: #06619e;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.fa-facebook-messenger {
+    margin-right: 4px;
+}
+ /*Back to top window*/
+#back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .2);
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: backround-color, color;
+}
+#back_to_top:hover, #back_to_top:focus {
+    background-color: black;
+    color: white;
+}
+.button_entrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button_entrance;
+}
+/*fade in up*/
+@keyframes button_entrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.button_exit {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button_exit;
+}
+/*fade out down*/
+@keyframes button_exit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
 }
