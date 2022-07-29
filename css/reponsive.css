@@ -1,7 +1,21 @@
 
 @media screen and (max-width: 676px) {
     .help_container {
-        justify-content: center; 
+        justify-content: center;
+    }
+    .search_support { 
+        width: 100%;
+        margin:auto;
+    }
+    .search_support i {
+        text-align: center;
+        font-size: 20px;
+    }
+    .search_support input{ 
+        width: 400px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
