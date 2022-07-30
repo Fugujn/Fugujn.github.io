@@ -19,46 +19,36 @@ img {
 
 /*header*/
 .sticky-top {
-    position: sticky;
-    z-index: 1;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header__top {
+    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 100px;
 }
 .container {
-    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
 }
 .row {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
-
-.col-3 {
-    flex: 0 0 23%;
-    max-width: 26%;
-}
-
-.col-9 {
-    flex: 0 0 70%;
-    max-width: 74%;
-}
-
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.grid {
-    width: 1200px;
-    margin: 0 auto;
+.logo {
+    width: 25%;
 }
 
     /* menu_1*/
 .list_item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
 }
     
 ul.list_item>li>a {
@@ -118,7 +108,7 @@ ul.menu_child li {
     width: 160%;
     margin: 0;
     position: sticky;
-    z-index: 10;
+    z-index: 1;
 
 }
 ul.menu_child>li>a {
@@ -168,12 +158,15 @@ div.menu_big::after {  /*add after to hover*/
     /*header_2*/
 .head2 {
     background-image: linear-gradient(#0a5e98, #0771b9);
+    
 }
-
 .head2__bottom {
     display: flex;
     align-items: center;
     color: white;
+}
+.header__hotline {
+    padding-left: 30px;
 }
 .head2__bottom .header__hotline .fa-solid {
     display: inline-block;
@@ -229,9 +222,10 @@ ul.menu_child_2 {
     display: none;
     position: absolute;
     overflow: hidden;
+    z-index: 2;
 }
 
-ul.menu_child_2>li {
+ul.menu_child_2 li {
     display: block;
     background-color: #0771b9;
     padding: 14px 14px;
@@ -385,19 +379,10 @@ ul.menu_child_2>li>a:hover {
     padding-bottom: 50px;
 }
 .img_container{
-    width: 240px;
+    width: 200px;
     margin: 10px;
 }
-.row_img {
-    display: flex;
-}
-.col_img {
-    overflow: hidden;
-    padding: 0 4px;
-}
-
 .img_container {
-    display: inline-block;
     position: relative;
 }
 
@@ -564,7 +549,7 @@ ul.menu_child_2>li>a:hover {
     
 }
 .sign_up_email_text input {
-    width: 30%;
+    width: 200px;
     padding: 8px 0;
     border-radius: 6px;
     border: 1px solid #cad1d3;

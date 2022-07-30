@@ -36,7 +36,7 @@ const backToTopbtn =  document.querySelector("#back_to_top");
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-    if (window.pageYOffset > 1200) {  //show backtotop
+    if (window.pageYOffset > 1000) {  //show backtotop
         if(!backToTopbtn.classList.contains("button_entrance")) {
             backToTopbtn.classList.remove("button_exit");
             backToTopbtn.classList.add("button_entrance");
@@ -59,3 +59,23 @@ function scrollFunction() {
         window.scrollTo(0,0);
     }
 }
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }

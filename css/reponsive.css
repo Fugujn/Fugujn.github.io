@@ -1,4 +1,22 @@
-
+@media screen and (max-width: 1120px) {
+    .head2__bottom {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 200px;
+    }
+    .header__top {
+        width: 100%;
+    }
+    button #back_to_top {
+        display: none;
+    }
+}
 @media screen and (max-width: 676px) {
     .help_container {
         justify-content: center;
@@ -12,10 +30,9 @@
         font-size: 20px;
     }
     .search_support input{ 
-        width: 400px;
+        width: 296px;
         font-size: 20px;
-        align-items: center;
-        justify-content: center;
+        margin-right: 32px;
     }
 }
 /* Responsive columns cards*/
@@ -50,6 +67,9 @@
     }
     .col25_sign_install img {
         width: 20%;
+    }
+    .sign_up_email_text input {
+        width: 150px;
     }
 }
 /* Responsive footer_1*/
@@ -118,8 +138,5 @@
     }
     .text-new {
         display: block;
-    }
-    .img_container:hover{
-        display: none;
     }
 }
