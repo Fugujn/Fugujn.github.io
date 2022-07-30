@@ -8,7 +8,7 @@
         display: none;
     }
     .logo {
-        width: 200px;
+        width: 180px;
     }
     .header__top {
         width: 100%;
@@ -36,15 +36,11 @@
     }
 }
 /* Responsive columns cards*/
-@media screen and (max-width: 676px) {
-  .cards i {
-    font-size: 60px;
-  }
-}
-@media screen and (max-width: 967px) {
+
+@media screen and (max-width: 974px) {
     .border_card {
-        width: 50%;
-        padding-bottom: 20px;
+        width: 260px;
+        padding-bottom: 26px;
         text-align: center;
         margin: 0 auto;
     }

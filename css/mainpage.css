@@ -249,13 +249,13 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 140px;
     position: relative;
 }
 .slide_show {
     width: 400%;
     display: flex;
-    flex-wrap: wrap;
+   
     transition: all 0.5s;
 }
 .slide_show img {
@@ -340,10 +340,11 @@ ul.menu_child_2>li>a:hover {
 /* Style the counter cards */
 .cards {
     border-radius: 4px;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px rgba(9, 9, 9, 0.3);
     text-align: center;
     background: #e3e6e6;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 .cards .text-of-cards {
     content: "";
@@ -367,6 +368,8 @@ ul.menu_child_2>li>a:hover {
 }
 .cards:hover {
     background-color: yellow;
+    box-shadow: 3px 3px #53a7ea, 4px 4px #53a7ea, 5px 5px #53a7ea;
+    transform: translateX(-3px);
 }
   /*img_list*/
 .main_img {
@@ -380,13 +383,13 @@ ul.menu_child_2>li>a:hover {
 }
 .img_container{
     width: 200px;
-    margin: 10px;
+    margin: 15px;
 }
 .img_container {
     position: relative;
 }
 
-.overlay{
+/* .overlay{
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -400,9 +403,9 @@ ul.menu_child_2>li>a:hover {
 .img_container:hover .overlay {
     bottom: 0;
     height: 100%;
-}
+} */
 
-.text-of-img {
+/* .text-of-img {
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -414,7 +417,7 @@ ul.menu_child_2>li>a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     overflow: anywhere;
-} 
+}  */
 .text-new {
     text-align: center;
     color: #06619e;
