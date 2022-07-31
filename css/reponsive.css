@@ -37,15 +37,29 @@
 }
 /* Responsive columns cards*/
 
-@media screen and (max-width: 974px) {
+@media screen and (max-width: 1167px) {
+    .main_card {
+        width: 90%;
+    }
     .border_card {
-        width: 260px;
+        width: 30%;
         padding-bottom: 26px;
         text-align: center;
         margin: 0 auto;
     }
     .cards .text-of-cards {
         padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .main_card {
+        width: 90%;
+    }
+    .border_card {
+        width: 50%;
+        padding-bottom: 26px;
+        text-align: center;
+        margin: 0 auto;
     }
 }
  /*Reponsive signup email and install */
