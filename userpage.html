@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="./images/shortcut_icon.jpg">
     <link rel="stylesheet" href="css/userpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Online Banking- P&Q Bank</title>
     <script src="./js/userpage.js"></script>
 </head>
@@ -36,18 +37,18 @@
                 </div>
                 <div class="user_zone">
                     <div class="wrap">
-                        <div class="user_input flex">
+                        <div class="user_input flex warpper">
                             <div class="switch_button flex">
                                 <div class="switch_button_language">
-                                    <button id="vietnamese"></button>
-                                    <button id="english"></button>
+                                    <button class="vietnamese"></button>
+                                    <button class="english"></button>
                                 </div>
                             </div>
                             <div class="user_area">
                                 <ul>
                                     <li>
                                         <p class="user_area_text">Tên đăng nhập</p>
-                                        <div class="insert_keyboard flex">
+                                        <div class="insert_keyboard flex wrapper">
                                             <input type="text">
                                             <img src="./images/keyboard.png" />
                                         </div>
@@ -75,10 +76,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="share">
+                    <div class="wrapper">
+                        <button class="btn">
+                            <i class="ri-share-line"></i>
+                        </button>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#" class="link ig">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li class="item" style="--d: .25s;">
+                                <a href="#" class="link tw">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                            <li class="item" style="--d: .5s;">
+                                <a href="#" class="link sc">
+                                    <i class="ri-snapchat-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+
+    </div>
 </body>
 
 </html>
