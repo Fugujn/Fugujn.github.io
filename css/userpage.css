@@ -174,11 +174,13 @@ body {
     right: 0px;
 }
 
-/* .share {
-    position: absolute;
+.share {
+    position: fixed;
+    width: 100px;
+    height: 100px;
     bottom: 0px;
     right: 0px;
-} */
+}
 
 .share :is(.btn, .link) {
     display: inline-flex;
@@ -243,4 +245,77 @@ body {
 .sc:hover {
     background-color: #FFFC00;
     color: inherit;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.main_footer .row_footer .col_footer ul li i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 6px;
+}
+
+.main_footer {
+    width: 80%;
+    margin: auto;
+}
+
+.footer {
+    background-color: #0771b9;
+    padding: 50px 0;
+}
+
+.row_footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_footer {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.col_footer h4 {
+    font-size: 20px;
+    color: rgb(225, 238, 49);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col_footer h4::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 1px;
+    bottom: -8px;
+    height: 3px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.col_footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col_footer ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col_footer ul li a:hover {
+    padding-left: 8px;
+}
+
+.col_footer ul li {
+    list-style: none;
 }
