@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+        <!-- start Header -->
     <header class="sticky-top">
         <div class="header__top">
             <div class="container">
@@ -76,7 +76,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li>
+                            <li class="sub">
                                 <a href=""> <i
                                         class="fa-solid fa-hand-holding-dollar animate__animated animate__headShake animate__infinite animate__slower"></i>
                                     Đầu tư</a>
@@ -86,8 +86,10 @@
                         </ul>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
         <div class="head2">
             <div class="head2__bottom">
                 <div class="header__hotline">
@@ -119,15 +121,14 @@
                         <li class="menu__list-item">
                             <a class="menu__list-item-link" href="#">Liên hệ</a>
                         </li>
-                        <li class="menu__list-item dropdown">
-                            <a class="menu__list-item-link dropbtn" onclick="myFunction()" href="#">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                        <li class="menu__list-item dropbtn">
+                            <a class="menu__list-item-link ">
+                                <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+                                <div class="search_form">
+                                    <input type="text" id="search_box" placeholder="Tìm kiếm">
+                                    <label for="search_box" class="fas fa-search"></label>
+                                </div>
                             </a>
-                            <ul class="menu_child_2">
-                                <li><input type="text" placeholder="Tìm kiếm">
-                                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </li>
-                            </ul>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-item-link" href="https://www.facebook.com/phuchandsom" target="_blank">
@@ -146,10 +147,19 @@
             </div>
         </div>
     </header>
+        <!-- End Header -->
+
+        <!-- Auto slide -->
     <section class="slide">
         <div class="direction">
             <a class="prev" onclick="Previous();">❮</a>
             <a class="next" onclick="Next()"">❯</a>
+            <ul class="slider_dots">
+                <li class="dot_item active"></li>
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+                <li class="dot_item"></li>
+            </ul>
         </div>
         <div class=" slide_show">
                 <img src="./images/test1.jpg" alt="">
@@ -158,6 +168,8 @@
                 <img src="./images/ads4.jpeg" alt="">
         </div>
     </section>
+        <!-- End auto Slide -->
+
     <section class="help_container">
         <div class="search_support">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -577,6 +589,7 @@
             </div>
         </div>
     </section>
+    <!-- start Footer -->
     <footer class="footer_1">
         <div class="main_footer">
             <div class="row_footer">
@@ -678,6 +691,7 @@
             </div>
         </div>
     </footer>
+    <!-- End Footer -->
     <a href="">
         <button id="chat" class="animate__animated animate__fadeInUp animate__delay-4s"><i
                 class="fa-brands fa-facebook-messenger"></i>Chat</button>

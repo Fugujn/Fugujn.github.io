@@ -7,22 +7,29 @@ max -= slideWidth;
 var slide = 0;
 
 function Next(){
-    var slideWidth = document.getElementsByClassName("slide")[0].clientWidth;
     if(slide < max) slide += slideWidth;
     else slide = 0;
     slideShow.style.marginLeft = '-' + slide + 'px';
 }
 function Previous(){
-    var slideWidth = document.getElementsByClassName("slide")[0].clientWidth;
     if(slide == 0) slide = max;
     else slide -= slideWidth;
     slideShow.style.marginLeft = '-' + slide + 'px';
 }
-
 setInterval(function() {
     Next();
 }, 4000);
+/*click Search form */
+let searchForm = document.querySelector(".search_form");
 
+document.querySelector("#search_btn").onclick = () => {
+    searchForm.classList.toggle("active");
+}
+
+window.onclick = () => {
+    searchForm.classList.remove("active");
+    bar.classList.remove("active");
+}
 /*See more things*/
 var seeMore = document.querySelector(".js_see_more");
 var More = document.querySelectorAll(".news_see_more");

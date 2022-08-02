@@ -1,21 +1,33 @@
-@media screen and (max-width: 1120px) {
-    .head2__bottom {
-        display: none;
-    }
-}
-@media screen and (max-width: 900px) {
-    .menu {
-        display: none;
-    }
+@media screen and (max-width:1190px) {
     .logo {
         width: 180px;
     }
-    .header__top {
-        width: 100%;
+    /* #menu-bar {
+        display: inline-block;
+        position: fixed;
+        right: 20px;
+        font-size: 20px;
     }
-    button #back_to_top {
+    .sub a i {
         display: none;
     }
+    .row .menu {
+        position: absolute;
+        top:100%;
+        right: 0;
+        background-image: linear-gradient(#0a5e98, #0771b9);
+        width: 20rem;
+        height: 40rem;
+    }
+    .row .menu .list_item{
+        display: block;
+        margin-left: 0px;
+        margin-top: 8px;
+        font-size: 1.8rem;
+    }
+    .head2__bottom {
+        display: none;
+    } */
 }
 @media screen and (max-width: 676px) {
     .help_container {

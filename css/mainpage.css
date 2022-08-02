@@ -22,6 +22,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 100;
     width: 100%;
 }
@@ -43,12 +44,13 @@ img {
 .logo {
     width: 25%;
 }
-
+#menu-bar {
+    display: none;
+}
     /* menu_1*/
 .list_item {
     display: flex;
     align-items: center;
-    padding: 0 15px;
 }
     
 ul.list_item>li>a {
@@ -63,8 +65,7 @@ ul.list_item>li>a {
 
 .menu {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -243,6 +244,41 @@ ul.menu_child_2>li>a {
 ul.menu_child_2>li>a:hover {
     color: rgb(237, 240, 58);
 }
+ /*header search-form*/
+ #search_btn {
+    cursor: pointer;
+    user-select: none;
+ }
+ .dropbtn .search_form {
+    position: absolute;
+    top:115%;
+    right: 10%;
+    display: flex;
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    transform: scaleY(0);
+    transform-origin: top;
+    user-select: none;
+}
+.dropbtn .search_form.active {
+    transform: scaleY(1);
+}
+.dropbtn .search_form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+    text-transform: none;
+    border: none;
+}
+.dropbtn .search_form label {
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 10px;
+    background-color: #06619e;
+}
 
  /* slide show auto */
 .slide {
@@ -252,10 +288,31 @@ ul.menu_child_2>li>a:hover {
     margin-top: 140px;
     position: relative;
 }
+.direction .slider_dots {
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    z-index: 10;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+.direction .slider_dots li {
+    margin: 0 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(92, 89, 82, 0.4);
+    user-select: none;
+}
+.direction .slider_dots li:active, 
+.slider_dots li:hover {
+    background-color: white;
+}
 .slide_show {
     width: 400%;
     display: flex;
-   
     transition: all 0.5s;
 }
 .slide_show img {
@@ -699,6 +756,7 @@ button.sign_up_button:hover {
     text-decoration: underline;
     color: #06619e;
 }
+ /* end footer */
 marquee {
     margin-top: 20px;
     text-align: center;
