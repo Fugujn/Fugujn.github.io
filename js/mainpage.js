@@ -28,7 +28,6 @@ document.querySelector("#search_btn").onclick = () => {
 
 window.onclick = () => {
     searchForm.classList.remove("active");
-    bar.classList.remove("active");
 }
 /*See more things*/
 var seeMore = document.querySelector(".js_see_more");

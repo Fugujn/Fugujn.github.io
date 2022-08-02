@@ -29,13 +29,11 @@ img {
 .header__top {
     background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 10px;
-    
+    padding-left: 20px;
+    padding-right: 100px;
 }
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin: 0 auto;
     width: 100%;
 }
 .row {
@@ -43,7 +41,7 @@ img {
     align-items: center;
 }
 .logo {
-    width: 300px;
+    width: 25%;
 }
 #menu-bar {
     display: none;
@@ -166,11 +164,6 @@ div.menu_big::after {  /*add after to hover*/
     display: flex;
     align-items: center;
     color: white;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
 }
 .header__hotline {
     padding-left: 30px;
@@ -285,284 +278,91 @@ ul.menu_child_2>li>a:hover {
     padding: 10px;
     background-color: #06619e;
 }
-
- /* slide show auto */
-.slide {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 140px;
-    position: relative;
-}
-.direction .slider_dots {
-    position: absolute;
-    left: 50%;
-    bottom: 14px;
-    z-index: 10;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-}
-.direction .slider_dots li {
-    margin: 0 10px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
+/*header search-form*/
+#search_btn {
     cursor: pointer;
-    background-color: rgba(92, 89, 82, 0.4);
+    user-select: none;
+ }
+ .dropbtn .search_form {
+    position: absolute;
+    top:115%;
+    right: 10%;
+    display: flex;
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    transform: scaleY(0);
+    transform-origin: top;
     user-select: none;
 }
-.direction .slider_dots li:active, 
-.slider_dots li:hover {
-    background-color: white;
+.dropbtn .search_form.active {
+    transform: scaleY(1);
 }
-.slide_show {
-    width: 400%;
-    display: flex;
-    transition: all 0.5s;
-}
-.slide_show img {
-    width: 25%;
-}
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
- /* support to help */
-.help_container {
+.dropbtn .search_form input {
+    height: 100%;
     width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    display: inline-block;
-}
-.search_support i{
-    font-size: 30px;
-    color: gray;
-    position: absolute;
-
-}
-.search_support input {
-    width: 460px;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+    text-transform: none;
     border: none;
-    font-size: 30px;
-    line-height: 28px;
-    outline: none;
-    position: relative;
-    left: 38px;
 }
- /* titles */
-.request {
-    margin: auto;
-    padding: 32px;
-    font-size: 50px;
-    font-weight: bold;
-    color: #06619e;
-    text-align: center;
-    border-top: 1px solid #06619e;
-    padding-bottom: 28px;
-}
-  /* the counter card*/
-.main_card {
-    align-items: center;
-    margin: auto;
-    width: 90%;
-}
-
-.row_card {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 0px;
-}
-.border_card {
-    padding: 0px 10px;
-    width: 15%;
-    position: relative;
-    margin: 0 auto;
-}
-
-
-/* Style the counter cards */
-.cards {
-    border-radius: 4px;
-    box-shadow: 0 0 12px rgba(9, 9, 9, 0.3);
-    text-align: center;
-    background: #e3e6e6;
+.dropbtn .search_form label {
+    cursor: pointer;
+    font-size: 1.4rem;
     padding: 10px;
-    transition: all 0.2s ease-in-out;
-}
-.cards .text-of-cards {
-    content: "";
-    position: absolute;
-    font-size: 18px;
-    font-weight: bold;
-    color: #06619e;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10%;
-}
-.cards i {
-    width: 100%;
-    font-size: 80px;
-    margin-top: 20px;
-    margin-bottom: 56px;
-    color: #0771b9;
-    text-align: center;
-    align-items: center;
-}
-.cards:hover {
-    background-color: yellow;
-    box-shadow: 3px 3px #53a7ea, 4px 4px #53a7ea, 5px 5px #53a7ea;
-    transform: translateX(-3px);
-}
-  /*img_list*/
-.main_img {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 50px;
-}
-.img_container{
-    width: 200px;
-    margin: 15px;
-}
-.img_container {
-    position: relative;
+    background-color: #06619e;
 }
 
-.text-new {
-    text-align: center;
-    color: #06619e;
-    font-weight: bold;
-    display: none;
+/*sign up email and install */
+.install {
+    background-color: #f1f3f2; 
+    padding: 4px 0;
 }
-   /*img and News*/
-.main_news {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.install_container {
     width: 80%;
     margin: auto;
 }
-
-.img_news {
-    height: 290px;
-    width: 270px;
-    margin: 0px 9px 12px;
+.row_install {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.img_news img {
-    height: 160px;
+.col25_sign_install {
+    width: 25%;
+    margin-top: 3px;
 }
-.col_img_news {
-    overflow: hidden;
-    text-align: center;
+.col50_sign_install {
+    width: 50%;
 }
-.img_news a .col_img_news img {
-    transform: scale(1);
-    transition: all .4s ease-in;
-}
-
-.img_news .col_img_news:hover img {
-    transform: scale(1.2);
-}
-.text_news {
-    overflow-wrap: anywhere;
-    margin: 2px 0;
-    font-style: italic;
-    font-size: 14px;
-    font-weight: 400;
-    color: #06619e;
-    width: 100%;
-}
-.text_news_2 {
-    overflow-wrap: anywhere;
-    color: black;
-}
-.main_see_more {
-    text-align: center;
-    padding: 20px;
+.col25_sign_install img {
+    width: 40%;
     
 }
-   /*see more img_news*/
-.see_more {
-    padding: 12px 32px;
-    font-size: 16px;
-    background-color: #0771b9;
+.sign_up_email_text input {
+    width: 200px;
+    padding: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #cad1d3;
+}
+.sign_up_button {
     border: none;
+    padding: 8px 10px;
+    background-color: #06619e;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.sign_up_button a {
     color: white;
-    position: relative;
 }
-.news_see_more {
-    display: none;
-    animation: bottom-to-top 1s ease-in;
+button.sign_up_button:hover {
+    box-shadow: 2px 2px #53a7ea, 3px 3px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
 }
-.see_more::after {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    width: 106%;
-    height: 111%;
-    border-top: 2px solid #0771b9;
-    border-bottom: 2px solid #0771b9;
-    transition: linear all 0.3s;
-    transform: scaleX(0);
-}
-.see_more:hover::after {
-    transform: scaleX(1);
-}
-.see_more::before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    width: 103%;
-    height: 118%;
-    border-left: 2px solid #0771b9;
-    border-right: 2px solid #0771b9;
-    transition: linear all 0.3s;
-    transform: scaleY(0);
-}
-.see_more:hover::before {
-    transform: scaleY(1);
-    transition-delay: 0.2s;
-}
-@keyframes bottom-to-top {
-    from {
-        opacity: 0;
-        transform: translateY(20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
- /*sign up email and install */
- .install {
+/*sign up email and install */
+.install {
     background-color: #f1f3f2; 
     padding: 4px 0;
 }
@@ -762,85 +562,10 @@ button.sign_up_button:hover {
     text-decoration: underline;
     color: #06619e;
 }
- /* end footer */
 marquee {
-    margin-top: 20px;
+    margin-top: 500px;
     text-align: center;
     justify-content: center;
     font-size: 16px;
     font-style: italic;
-}
-/*button chat*/
-#chat {
-    position: fixed;
-    display: flex;
-    font-size: 20px;
-    font-weight: 500;
-    justify-content: center;
-    bottom: 20px;
-    left: 20px;
-    width: 100px;
-    font-size: 20px;
-    padding: 8px ;
-    background-color: #06619e;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-}
-.fa-facebook-messenger {
-    margin-right: 4px;
-}
- /*Back to top window*/
-#back_to_top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, .2);
-    color: black;
-    cursor: pointer;
-    border-radius: 50%;
-    outline: none;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-property: backround-color, color;
-}
-#back_to_top:hover, #back_to_top:focus {
-    background-color: black;
-    color: white;
-}
-.button_entrance {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-name: button_entrance;
-}
-/*fade in up*/
-@keyframes button_entrance {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-.button_exit {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-name: button_exit;
-}
-/*fade out down*/
-@keyframes button_exit {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
 }
