@@ -16,10 +16,9 @@ ul {
 img {
     width: 100%;
 }
-
 /*header*/
-.fixed-top {
-    position: fixed;
+.sticky-top {
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -29,7 +28,6 @@ img {
 .header__top {
     background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 10px;
-    
 }
 .container {
     margin-right: auto;
@@ -168,9 +166,7 @@ div.menu_big::after {  /*add after to hover*/
     color: white;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
     padding-left: 15px;
-    width: 100%;
 }
 .header__hotline {
     padding-left: 30px;
@@ -291,7 +287,7 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 140px;
+    margin-top: 10px;
     position: relative;
 }
 .direction .slider_dots {
@@ -442,8 +438,9 @@ ul.menu_child_2>li>a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: gold;
     margin: auto;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 .img_container{
     width: 200px;
@@ -587,8 +584,9 @@ ul.menu_child_2>li>a:hover {
     
 }
 .sign_up_email_text input {
+    top: -1px;
     width: 200px;
-    padding: 8px 0;
+    padding: 15px 0;
     border-radius: 6px;
     border: 1px solid #cad1d3;
 }
@@ -629,7 +627,7 @@ button.sign_up_button:hover {
 }
 .footer_1 {
     background-color: #0771b9;
-    padding: 50px 0;
+    padding-top: 50px; 
 }
 .row_footer {
     display: flex;
@@ -673,6 +671,7 @@ button.sign_up_button:hover {
 
 /*footer_2*/
 .footer_2 {
+    margin-top: 50px;
     background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 50px 0;
 }

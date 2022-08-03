@@ -5,7 +5,8 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="description" content="Ngân hàng số P&Q Banking-">
-    <meta name="keywords" content="online bank, internet banking, ngân hàng điện tử 4.0, ngân hàng trực tuyến, ebanking, giao dịch trực tuyến">
+    <meta name="keywords"
+        content="online bank, internet banking, ngân hàng điện tử 4.0, ngân hàng trực tuyến, ebanking, giao dịch trực tuyến">
     <title>Ngân hàng P&QBank</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -20,18 +21,17 @@
     <link rel="icon" href="./images/shortcut_icon.jpg">
     <link href="./Izmir-master/izmir.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reponsive.css">
-    <script src='main.js'></script>
 </head>
 
 <body>
-        <!-- start Header -->
-    <header class="fixed-top">
+    <!-- start Header -->
+    <header class="sticky-top">
         <div class="header__top">
             <div class="container">
                 <div class="row">
                     <div class="logo">
                         <a href="">
-                            <img src="./images/p&qbank_logo.png">
+                            <img src="./images/internet_banking_logo.png">
                         </a>
                     </div>
                     <div class="menu">
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="head2">
             <div class="head2__bottom">
                 <div class="header__hotline">
@@ -123,8 +123,8 @@
                             <a class="menu__list-item-link" href="#">Liên hệ</a>
                         </li>
                         <li class="menu__list-item dropbtn">
-                            <a class="menu__list-item-link ">
-                                <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+                            <a class="menu__list-item-link" id="search_btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 <div class="search_form">
                                     <input type="text" id="search_box" placeholder="Tìm kiếm">
                                     <label for="search_box" class="fas fa-search"></label>
@@ -148,28 +148,30 @@
             </div>
         </div>
     </header>
-        <!-- End Header -->
+    <!-- End Header -->
 
-        <!-- Auto slide -->
+    <!-- Auto slide -->
     <section class="slide">
         <div class="direction">
             <a class="prev" onclick="Previous();">❮</a>
             <a class="next" onclick="Next()"">❯</a>
-            <ul class="slider_dots">
+            <ul class=" slider_dots">
                 <li class="dot_item active"></li>
                 <li class="dot_item"></li>
                 <li class="dot_item"></li>
                 <li class="dot_item"></li>
-            </ul>
+                </ul>
         </div>
         <div class="slide_show">
-                <img src="./images/test1.jpg" alt="">
-                <img src="./images/test3.png" alt="">
-                <img src="./images/test4.png" alt="">
-                <img src="./images/ads4.jpeg" alt="">
+            <img src="./images/slide_1.png" alt="">
+            <img src="./images/slide_2.jpg" alt="">
+            <img src="./images/slide_3.png" alt="">
+            <img src="./images/slide_4.png" alt="">
+            <img src="./images/slide_5.jpg" alt="">
+            <img src="./images/slide_6.jpg" alt="">
         </div>
     </section>
-        <!-- End auto Slide -->
+    <!-- End auto Slide -->
 
     <section class="help_container">
         <div class="search_support">
@@ -234,8 +236,7 @@
             <div class="border_card">
                 <a href="">
                     <div class="cards">
-                        <i
-                            class="fa-solid fa-calculator animate__animated animate__pulse animate__infinite"></i>
+                        <i class="fa-solid fa-calculator animate__animated animate__pulse animate__infinite"></i>
                         <div class="text-of-cards">
                             TÍNH TOÁN
                         </div>
@@ -336,7 +337,6 @@
     </section>
 
     <h1 class="request animate__animated animate__slideInLeft animate__delay-3s">
-
         TIN TỨC - HOẠT ĐỘNG
     </h1>
 
@@ -562,8 +562,11 @@
         </button>
     </div>
     <marquee width="100%">
-        Ngân hàng P&Q BANK chắc chắn đảm bảo an toàn, lợi ích khi đăng ký tài khoản và sử dụng thẻ tín dụng tại đây!
+        Ngân hàng P&Q BANK chắc chắn đảm bảo an toàn, lợi ích khi đăng ký tài khoản và sử dụng thẻ tín dụng tại đây! Nơi lý tưởng cho mọi gia đình!
     </marquee>
+    <div>
+        <img src="./images/quangcao_2.png" alt="P&Q Bank">
+    </div>
     <section class="install">
         <div class="install_container">
             <div class="row_install">
@@ -574,7 +577,7 @@
                 </div>
                 <div class="col50_sign_install">
                     <div class="sign_up_email_text">
-                        <input type="text" placeholder="Email của bạn">
+                        <input type="email" id="email" placeholder="Email của bạn" required>
                         <button class="sign_up_button">
                             <a href="#">ĐĂNG KÝ</a>
                         </button>
@@ -645,58 +648,64 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <footer class="footer_2">
-        <div class="main_footer_2">
-            <div class="row_footer_2">
-                <div class="col25_footer_2">
-                    <div class="logo_footer">
-                        <a href=""><img src="./images/internet_banking_logo.png" alt="logo"></a>
+
+        <div class="footer_2">
+            <div class="main_footer_2">
+                <div class="row_footer_2">
+                    <div class="col25_footer_2">
+                        <div class="logo_footer">
+                            <a href=""><img src="./images/internet_banking_logo.png" alt="logo"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col50_footer_2">
-                    <div>
-                        <h4>Ngân hàng CNTT P&Q</h4>
-                        <p>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</p>
-                        <p>ĐT: 0328877290</p>
-                        Email:
-                        <a href="mailto:trongphuc1321@gmail.com">
-                            trongphuc1321@gmail.com
-                        </a>
+                    <div class="col50_footer_2">
+                        <div>
+                            <h4>Ngân hàng CNTT P&Q</h4>
+                            <p>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</p>
+                            <p>ĐT: 0328877290</p>
+                            Email:
+                            <a href="mailto:trongphuc1321@gmail.com">
+                                trongphuc1321@gmail.com
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col25_footer_2">
-                    <div>
-                        <h4>Liên kết nhanh</h4>
-                        <div class="social_link">
-                            <a href="https://www.facebook.com/phuchandsom" target="_blank"><i
-                                    class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <div class="col25_footer_2">
+                        <div>
+                            <h4>Liên kết nhanh</h4>
+                            <div class="social_link">
+                                <a href="https://www.facebook.com/phuchandsom" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <footer class="copyright">
-        <div class="main_copyright">
-            <div class="row_copyright">
-                <div class="col25_copyright">
-                    <a href="">
-                        <p>Điều khoản & Điều kiện sử dụng</p>
-                    </a>
-                </div>
-                <div class="col75_copyright">
-                    <p>Copyright &copy; 2022 P&Qbank. All right reserved.</p>
+        <!-- copy right -->
+        <div class="copyright">
+            <div class="main_copyright">
+                <div class="row_copyright">
+                    <div class="col25_copyright">
+                        <a href="">
+                            <p>Điều khoản & Điều kiện sử dụng</p>
+                        </a>
+                    </div>
+                    <div class="col75_copyright">
+                        <p>Copyright &copy; 2022 P&Qbank. All right reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
     </footer>
     <!-- End Footer -->
+
+    <!-- chat_messenger -->
     <a href="">
         <button id="chat" class="animate__animated animate__fadeInUp animate__delay-4s"><i
                 class="fa-brands fa-facebook-messenger"></i>Chat</button>
     </a>
+    <!-- button back-to-top -->
     <button id="back_to_top"><i class="fa-solid fa-angles-up"></i></button>
     <script src="./js/mainpage.js"></script>
 

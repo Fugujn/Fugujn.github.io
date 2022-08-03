@@ -132,3 +132,45 @@
         display: block;
     }
 }
+ /*img and news*/
+@media screen and (max-width:1200px){
+    .main_news {
+        width: 90%;
+    }
+    .img_news {
+        width: 30%;
+    }
+}
+@media screen and (max-width:850px){
+    .main_news {
+        width: 100%;
+    }
+    .img_news {
+        width: 40%;
+    }
+}
+@media screen and (max-width:500px){
+
+    .img_news {
+        width: 60%;
+    }
+}
+
+  /*page card*/
+@media screen and (max-width: 1500px) {
+    .products_card {
+        width: 100%;
+    }
+    .card_banking {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .products_card {
+        width: 100%;
+    }
+    .card_banking {
+        width: 90%;
+    }
+}
+
