@@ -1,34 +1,4 @@
-@media screen and (max-width:1190px) {
-    .logo {
-        width: 180px;
-    }
-    /* #menu-bar {
-        display: inline-block;
-        position: fixed;
-        right: 20px;
-        font-size: 20px;
-    }
-    .sub a i {
-        display: none;
-    }
-    .row .menu {
-        position: absolute;
-        top:100%;
-        right: 0;
-        background-image: linear-gradient(#0a5e98, #0771b9);
-        width: 20rem;
-        height: 40rem;
-    }
-    .row .menu .list_item{
-        display: block;
-        margin-left: 0px;
-        margin-top: 8px;
-        font-size: 1.8rem;
-    }
-    .head2__bottom {
-        display: none;
-    } */
-}
+
 @media screen and (max-width: 676px) {
     .help_container {
         justify-content: center;
@@ -162,3 +132,45 @@
         display: block;
     }
 }
+ /*img and news*/
+@media screen and (max-width:1200px){
+    .main_news {
+        width: 90%;
+    }
+    .img_news {
+        width: 30%;
+    }
+}
+@media screen and (max-width:850px){
+    .main_news {
+        width: 100%;
+    }
+    .img_news {
+        width: 40%;
+    }
+}
+@media screen and (max-width:500px){
+
+    .img_news {
+        width: 60%;
+    }
+}
+
+  /*page card*/
+@media screen and (max-width: 1500px) {
+    .products_card {
+        width: 100%;
+    }
+    .card_banking {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .products_card {
+        width: 100%;
+    }
+    .card_banking {
+        width: 90%;
+    }
+}
+
