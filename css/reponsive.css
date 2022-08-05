@@ -8,6 +8,11 @@
     .slide_show img {
     height: 150px;
     }
+    .slick-dots button {
+        width: 10px;
+        height: 10px;
+        margin: 2px;
+    }
 }
 @media screen and (max-width: 676px) {
     .help_container {
