@@ -1,24 +1,29 @@
-/*slide show auto*/
-var slideWidth = document.getElementsByClassName("slide")[0].clientWidth;
-var slideShow = document.getElementsByClassName("slide_show")[0];
-var Img = slideShow.getElementsByTagName("img");
-var max = slideWidth * Img.length;
-max -= slideWidth;
-var slide = 0;
+$(document).ready(function() {
+    $(".slide").slick({
+        infinite: true,
+        slidestoShow: 1,
+        slidestoScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        dots: true,
+        cssEase: 'linear',
+        prevArrow:"<button type='button' class='slick-prev slick-arrows'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next slick-arrows'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    arrows: false,
+                    draggable: true,
+                    fade: false,
+                    dots: true,
+                }
+            }
+        ]    
+    });
+});
 
-function Next(){
-    if(slide < max) slide += slideWidth;
-    else slide = 0;
-    slideShow.style.marginLeft = '-' + slide + 'px';
-}
-function Previous(){
-    if(slide == 0) slide = max;
-    else slide -= slideWidth;
-    slideShow.style.marginLeft = '-' + slide + 'px';
-}
-setInterval(function() {
-    Next();
-}, 4000);
 /*click Search form */
 let searchForm = document.querySelector(".search_form");
 
@@ -29,6 +34,7 @@ document.querySelector("#search_btn").onclick = () => {
 window.onclick = () => {
     searchForm.classList.remove("active");
 }
+
 /*See more things*/
 var seeMore = document.querySelector(".js_see_more");
 var More = document.querySelectorAll(".news_see_more");
@@ -38,7 +44,6 @@ seeMore.addEventListener("click", function() {
         More[d++].style.display = "block";
     if (d == More.length) seeMore.style.display = "none";
 })
-
 
 
 /* When the user clicks on the button, 
@@ -58,5 +63,33 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
         }
     }
+    }
+}
+/*Back to top button*/
+const backToTopbtn =  document.querySelector("#back_to_top");
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+    if (window.pageYOffset > 1000) {  //show backtotop
+        if(!backToTopbtn.classList.contains("button_entrance")) {
+            backToTopbtn.classList.remove("button_exit");
+            backToTopbtn.classList.add("button_entrance");
+
+            backToTopbtn.style.display = "block";
+        }
+    }
+    else { //hidden backtotop
+        if (backToTopbtn.classList.contains("button_entrance")) {
+            backToTopbtn.classList.remove("button_entrance");
+            backToTopbtn.classList.add("button_exit");
+            setTimeout( function() {
+                backToTopbtn.style.display = "none";
+            }, 200);
+        }
+    }
+    backToTopbtn.addEventListener("click", backtotop);
+
+    function backtotop() {
+        window.scrollTo(0,0);
     }
 }
