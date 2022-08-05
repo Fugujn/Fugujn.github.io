@@ -4,14 +4,9 @@
    }
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 500px) {
     .slide_show img {
-        height: 200px;
-    }
-}
-@media screen and (max-width: 456px) {
-    .slide_show img {
-        height: 100px;
+    height: 150px;
     }
 }
 @media screen and (max-width: 676px) {
