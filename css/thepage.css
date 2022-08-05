@@ -334,12 +334,13 @@ ul.menu_child_2>li>a:hover {
 .products_card {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
+
 }
 .card_banking {
     width: 560px;
@@ -347,18 +348,20 @@ ul.menu_child_2>li>a:hover {
     background-color: #e9ecec;
     margin: 0 15px;
     margin-bottom: 30px;
-    
+   
 }
 .card_banking .img_card_bank {
-    width: 300px;
+    width: 60%;
     margin: auto;
     padding: 18px 0;
-    
+
 }
 .card_banking h3 {
     text-align: center;
 }
 .card_banking ul {
+    align-items: center;
+    justify-content: center;
     list-style-type: square !important;
     padding: 20px 60px;
     font-size: 1.1rem;
@@ -367,7 +370,8 @@ ul.menu_child_2>li>a:hover {
     padding: 4px 0;
 }
 .card_banking .tick_compare {
-    padding-top: 80px;
+    padding: 40px;
+    justify-content: center;
     text-align: center;
 }
 .card_banking:hover {
@@ -379,10 +383,7 @@ ul.menu_child_2>li>a:hover {
     text-underline-position: above;
 }
  /*check compare*/
-label {
-    margin-right: 15px;
-    line-height: 32px;
-}
+
 input {
     appearance: none;
     border-radius: 50%;
@@ -414,7 +415,7 @@ input:checked {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .container_promotion .col_promotion {
@@ -430,32 +431,47 @@ input:checked {
     font-size: 1.1rem;
     padding-top: 8px;
 }
+ /*hover promotion*/
+.container_promotion .col_promotion .img_promo{
+    overflow: hidden;
+}
+.container_promotion .col_promotion a .img_promo img {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.container_promotion .col_promotion a:hover img {
+    transform: scale(1.1);
+}
+.container_promotion .col_promotion a:hover .text_promo{
+    color: gold;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
 
 /* the icons*/
 .main_icon {
     align-items: center;
-    margin: auto;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
 }
-
 .row_icon {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    margin: auto;
+    padding: 30px 0px;
+    width: 80%;
 }
 .container_icon {
-    padding: 0px 4px;
     width: 15%;
     position: relative;
     margin: 0 auto;
 }
-
-
 /* Style the icon promotion */
 .icons {
     border-radius: 4px;
     text-align: center;
-    background: #e3e6e6;
+    background-image: url(../images/bg_icon.png);
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -464,25 +480,26 @@ input:checked {
     position: absolute;
     font-size: 18px;
     font-weight: bold;
-    color: #06619e;
+    color: white;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10%;
 }
 .icons i {
-    width: 100%;
-    font-size: 80px;
+    font-size: 60px;
     margin-top: 20px;
     margin-bottom: 56px;
-    color: #0771b9;
+    color: white;
     text-align: center;
     align-items: center;
 }
 .icons:hover {
-    background-color: yellow;
-    box-shadow: 3px 3px #53a7ea, 4px 4px #53a7ea, 5px 5px #53a7ea;
+    box-shadow: 3px 3px gold, 4px 4px #53a7ea, 5px 5px #53a7ea;
     transform: translateX(-3px);
+}
+.icons:hover i, .icons:hover .text-of-icons {
+    color: gold;
 }
  /*sign up email and install */
  .install {

@@ -1,4 +1,32 @@
+@media screen and (max-width: 1195px) {
+   .head2 {
+    display: none;
+   }
+   .menu {
+    display: none;
+   }
+}
 
+@media screen and (max-width: 700px) {
+    .slide_show img {
+        height: 250px;
+    }
+    .slick-dots button {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .slide_show img {
+    height: 150px;
+    }
+    .slick-dots button {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+    }
+}
 @media screen and (max-width: 676px) {
     .help_container {
         justify-content: center;
@@ -39,6 +67,17 @@
     }
     .border_card {
         width: 50%;
+        padding-bottom: 26px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 290px) {
+    .main_card {
+        width: 100%;
+    }
+    .border_card {
+        width: 100%;
         padding-bottom: 26px;
         text-align: center;
         margin: 0 auto;
@@ -132,45 +171,79 @@
         display: block;
     }
 }
- /*img and news*/
-@media screen and (max-width:1200px){
-    .main_news {
-        width: 90%;
-    }
-    .img_news {
-        width: 30%;
-    }
-}
-@media screen and (max-width:850px){
-    .main_news {
-        width: 100%;
-    }
-    .img_news {
-        width: 40%;
-    }
-}
-@media screen and (max-width:500px){
-
-    .img_news {
-        width: 60%;
-    }
-}
-
-  /*page card*/
+  /* reponsive page card */
+/*Products card*/
 @media screen and (max-width: 1500px) {
     .products_card {
         width: 100%;
     }
     .card_banking {
-        width: 35%;
+        width: 40%;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1180px) {
     .products_card {
         width: 100%;
     }
     .card_banking {
-        width: 90%;
+        width: 45%;
     }
 }
-
+@media screen and (max-width: 796px) {
+    .products_card {
+        width: 100%;
+    }
+    .card_banking {
+        width: 70%;
+        overflow: scroll;
+    }
+}
+/*icons promotion*/
+@media screen and (max-width: 1192px) {
+    .main_icon {
+        width: 100%;
+    }
+    .row_icon {
+        width: 75%;
+        padding-bottom: 26px;
+        text-align: center;
+        margin: auto;
+    }
+    .icons .text-of-icons {
+        padding-bottom: 10px;
+    }
+    .container_icon {
+        width: 28%;
+        padding-bottom: 20px;      
+    }
+}
+@media screen and (max-width: 796px) {
+    .main_icon {
+        width: 100%;
+    }
+    .row_icon {
+        width: 80%;
+        padding-bottom: 26px;
+        text-align: center;
+        margin: auto;
+    }
+    .container_icon {
+        width: 40%;
+        padding-bottom: 20px;      
+    }
+}
+@media screen and (max-width: 450px) {
+    .main_icon {
+        width: 100%;
+    }
+    .row_icon {
+        width: 100%;
+        padding-bottom: 26px;
+        text-align: center;
+        margin: auto;
+    }
+    .container_icon {
+        width: 60%;
+        padding-bottom: 20px;      
+    }
+}

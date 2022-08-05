@@ -10,7 +10,6 @@
     <title>Ngân hàng P&QBank</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' href='./css/mainpage.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./images/shortcut_icon.jpg">
     <link href="./Izmir-master/izmir.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel='stylesheet' href='./css/mainpage.css'>
     <link rel="stylesheet" href="./css/reponsive.css">
 </head>
 
@@ -37,7 +38,7 @@
                     <div class="menu">
                         <ul class="list_item">
                             <li class="sub">
-                                <a href="">
+                                <a href="./thepage.html">
                                     <i
                                         class="fa-regular fa-credit-card animate__animated animate__headShake animate__infinite animate__slower "></i>
                                     Thẻ
@@ -152,23 +153,29 @@
 
     <!-- Auto slide -->
     <section class="slide">
-        <div class="direction">
-            <a class="prev" onclick="Previous();">❮</a>
-            <a class="next" onclick="Next()"">❯</a>
-            <ul class=" slider_dots">
-                <li class="dot_item active"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                <li class="dot_item"></li>
-                </ul>
-        </div>
         <div class="slide_show">
             <img src="./images/slide_1.png" alt="">
-            <img src="./images/slide_2.jpg" alt="">
+        </div>
+        <div class="slide_show">
+            <img src="./images/slide_2.png" alt="">
+        </div>
+        <div class="slide_show">
             <img src="./images/slide_3.png" alt="">
+        </div>
+        <div class="slide_show">
             <img src="./images/slide_4.png" alt="">
+        </div>
+        <div class="slide_show">
             <img src="./images/slide_5.jpg" alt="">
+        </div>
+        <div class="slide_show">
             <img src="./images/slide_6.jpg" alt="">
+        </div>
+        <div class="slide_show">
+            <img src="./images/slide_7.jpg" alt="">
+        </div>
+        <div class="slide_show">
+            <img src="./images/slide_8.png" alt="">
         </div>
     </section>
     <!-- End auto Slide -->
@@ -708,6 +715,9 @@
     </a>
     <!-- button back-to-top -->
     <button id="back_to_top"><i class="fa-solid fa-angles-up"></i></button>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/mainpage.js"></script>
 
 </body>

@@ -40,7 +40,7 @@ img {
     display: flex;
     align-items: center;
 }
-.logo {
+.logo img {
     width: 300px;
 }
 #menu-bar {
@@ -50,6 +50,7 @@ img {
 .list_item {
     display: flex;
     align-items: center;
+    padding-left: 100px;
 }
     
 ul.list_item>li>a {
@@ -64,7 +65,6 @@ ul.list_item>li>a {
 
 .menu {
     display: flex;
-    justify-content: center;
     width: 100%;
 }
 
@@ -158,7 +158,6 @@ div.menu_big::after {  /*add after to hover*/
     /*header_2*/
 .head2 {
     background-image: linear-gradient(#0a5e98, #0771b9);
-    
 }
 .head2__bottom {
     display: flex;
@@ -284,66 +283,57 @@ ul.menu_child_2>li>a:hover {
 
  /* slide show auto */
 .slide {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 10px;
+    margin-top: 4px;
+    display: flex;
     position: relative;
 }
-.direction .slider_dots {
+.slick-arrows {
     position: absolute;
-    left: 50%;
-    bottom: 14px;
-    z-index: 10;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
+    width: 40px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0,0,0.6);
+    color: #fff;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
-.direction .slider_dots li {
-    margin: 0 10px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgba(92, 89, 82, 0.4);
-    user-select: none;
+.slick-arrows:hover {
+    background: rgba(255, 255,255,0.6);
+    color: #000;
 }
-.direction .slider_dots li:active, 
-.slider_dots li:hover {
-    background-color: white;
+.slick-prev {
+    left: 0;
 }
-.slide_show {
-    width: 400%;
-    display: flex;
-    transition: all 0.5s;
-}
-.slide_show img {
-    width: 25%;
-}
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-  /* Position the "next button" to the right */
-.next {
+.slick-next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.slick-dots {
+    position: absolute;
+    list-style: none;
+    display: flex !important;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
 }
+.slick-dots button {
+    background-color: rgb(207, 204, 204);
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 15px;
+    margin: 5px;
+    height: 15px;
+}
+.slick-dots .slick-active button,
+.slick-dots button:hover {
+    background: #0a5e98;
+}
+  /*end auto slide*/
  /* support to help */
 .help_container {
     width: 100%;
@@ -418,7 +408,6 @@ ul.menu_child_2>li>a:hover {
     bottom: 10%;
 }
 .cards i {
-    width: 100%;
     font-size: 80px;
     margin-top: 20px;
     margin-bottom: 56px;
@@ -438,7 +427,8 @@ ul.menu_child_2>li>a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: gold;
+    background-image: url(../images/bg_yel.jpg);
+    background-size: 100%;
     margin: auto;
     padding: 50px 0;
 }
@@ -462,17 +452,17 @@ ul.menu_child_2>li>a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .img_news {
-    height: 290px;
-    width: 270px;
+    height: 300px;
+    width: 322px;
     margin: 0px 9px 12px;
 }
 .img_news img {
-    height: 160px;
+    height: 195px;
 }
 .col_img_news {
     overflow: hidden;
@@ -482,8 +472,7 @@ ul.menu_child_2>li>a:hover {
     transform: scale(1);
     transition: all .4s ease-in;
 }
-
-.img_news .col_img_news:hover img {
+.img_news a:hover img {
     transform: scale(1.2);
 }
 .text_news {
