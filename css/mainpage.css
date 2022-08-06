@@ -22,7 +22,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 .header__top {
@@ -41,7 +41,7 @@ img {
     align-items: center;
 }
 .logo img {
-    width: 300px;
+    width: 60%;
 }
 #menu-bar {
     display: none;
@@ -50,7 +50,6 @@ img {
 .list_item {
     display: flex;
     align-items: center;
-    padding-left: 100px;
 }
     
 ul.list_item>li>a {
@@ -485,7 +484,8 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
 }
 .text_news_2 {
-    overflow-wrap: anywhere;
+    line-height: 20px;
+    text-overflow: clip;
     color: black;
 }
 .main_see_more {

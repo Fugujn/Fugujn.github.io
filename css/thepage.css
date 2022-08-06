@@ -162,7 +162,6 @@ div.menu_big::after {  /*add after to hover*/
 }
 .head2__bottom {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     color: white;
     margin-right: auto;
@@ -263,6 +262,7 @@ ul.menu_child_2>li>a:hover {
     transform: scaleY(0);
     transform-origin: top;
     user-select: none;
+    z-index: 2;
 }
 .dropbtn .search_form.active {
     transform: scaleY(1);
@@ -384,7 +384,7 @@ ul.menu_child_2>li>a:hover {
 }
  /*check compare*/
 
-input {
+.tick_compare input {
     appearance: none;
     border-radius: 50%;
     width: 16px;
@@ -395,13 +395,14 @@ input {
     position: relative;
     top: 4px;
 }
-input:checked {
+.tick_compare input:checked {
     border: 6px solid black;
 }
   /* promotions */
 .main_promotion {
     background-image: url(../images/background.jpg);
     background-size: 100%;
+    background-attachment: fixed;
 }
 .title_promo {
     text-align: center;
