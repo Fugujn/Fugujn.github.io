@@ -21,83 +21,109 @@
     <script src="./js/userpage.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <div class="header">
-        <div class="img-logo">
-            <a href="./userpage.html"><img src="images/internet_banking_logo.png" /></a>
+        <div class="animated_background">
+            <div class="header_img">
+                <a href="./userpage.html"><img src="images/internet_banking_logo.png" /></a>
+            </div>
         </div>
         <div class="selection_header flex">
-            <div class="header_text flex">
-                <div class="phone_icon">
+            <div class="selection_header_text flex">
+                <div class="selection_phone_icon">
                     <i class="fa-solid fa-phone animate__animated animate__tada animate__infinite"></i>
                 </div>
-                <div class="phone_text">
-                    <p>Trung tâm hỗ trợ dịch vụ khách hàng: <span class="number_phone">1900 1900</span></p>
+                <div>
+                    <p>
+                        Trung tâm hỗ trợ dịch vụ khách hàng:
+                        <span class="selection_number_phone" data-fill-text="1900 1900">
+                            1900 1900
+                        </span>
+                    </p>
                 </div>
             </div>
-            <div class="header_menu">
+            <div>
                 <ul class="flex">
-                    <li class="main_menu"><a href="">Giới thiệu</a></li>
-                    <li class="main_menu"><a href="">Tỉ giá</a></li>
-                    <li class="main_menu"><a href="">ATM</a></li>
-                    <li class="main_menu"><a href="">Hỗ trợ</a></li>
-                    <li class="main_menu"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="main_menu"><a href=""><i class="ri-share-line"></i></a></li>
-                    <li class="main_menu"><a href=""><img src="./images/Engish.png"></a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Giới thiệu</a>
+                    </li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tỉ giá</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">ATM</a></li>
+                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Mở
+                            thẻ
+                            Online</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn"><img
+                                src="./images/Engish.png"></a></li>
                 </ul>
             </div>
         </div>
-        <div class="content">
-            <div class="flex wrap">
-                <div class="list_item">
-                    <ul>
-                        <li><a href="./index.html">Trang chủ</a></li>
-                        <li><a href="">Giao dịch</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                    </ul>
+    </div>
+    <div class="content wrap flex">
+        <div class="content_menu_frame">
+            <div class="border flex">
+                <a href="./index.html" class="content_menu_btn">
+                    <span>Trang chủ</span>
+                </a>
+            </div>
+            <div class="border flex">
+                <a href="" class="content_menu_btn">
+                    <span>Giao dịch</span>
+                </a>
+            </div>
+            <div class="border flex">
+                <a href="" class="content_menu_btn">
+                    <span>Hỗ trợ</span>
+                </a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="login_frame">
+                <div class="login_title flex">
+                    <h1>Đăng nhập dịch vụ <i class="fa-solid fa-power-off"></i></h1>
                 </div>
-                <div class="login_frame">
-                    <div class="login_title">
-                        <h1>Đăng nhập dịch vụ <i class="fa-solid fa-power-off"></i></h1>
-                    </div>
-                    <div class="user_zone">
-                        <div class="wrap">
-                            <div class="user_input flex warpper">
-                                <div class="user_area">
-                                    <ul>
-                                        <li>
-                                            <p class="user_area_text">Tên đăng nhập</p>
-                                            <div class="insert_keyboard flex wrapper">
-                                                <input type="text">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <p class="user_area_text">Mật khẩu đăng nhập</p>
-                                            <div class="insert_keyboard flex">
-                                                <input type="text">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <p class="user_area_text">Mã xác thực</p>
-                                            <div class="insert_keyboard flex">
-                                                <input type="text">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="user_warning">
+                <div class="user_zone wrap">
+                    <div class="user_input flex">
+                        <div class="user_area flex">
+                            <ul>
+                                <li>
+                                    <p class="user_area_text">Tên đăng nhập</p>
+                                    <div class="insert_keyboard">
+                                        <input type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="user_area_text">Mật khẩu đăng nhập</p>
+                                    <div class="insert_keyboard">
+                                        <input type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="user_area_text">Mã xác thực</p>
+                                    <div class="insert_keyboard">
+                                        <input type="text">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user_warning">
 
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="scroll_snap_type flex">
+                <div class="moving_image"><img src="./images/banner-epin.jpg" alt=""></div>
+                <div class="moving_image"><img src="./images/banner-happy-digital.jpg" alt=""></div>
+                <div class="moving_image"><img src="./images/banner-luu-y-lua-dao.jpg" alt=""></div>
+                <div class="moving_image"><img src="./images/banner-soft-otp.jpg" alt=""></div>
+            </div>
         </div>
-        <div class="footer">
-            <div class="main_footer"></div>
-            <div class="information_footer"></div>
-        </div>
+    </div>
+
+    <div class="footer">
+        <div class="main_footer"></div>
+        <div class="information_footer"></div>
+    </div>
+    </div>
 </body>
 
 </html>
