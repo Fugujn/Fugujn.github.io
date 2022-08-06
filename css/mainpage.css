@@ -41,7 +41,7 @@ img {
     align-items: center;
 }
 .logo img {
-    width: 60%;
+    width: 70%;
 }
 #menu-bar {
     display: none;
@@ -64,7 +64,7 @@ ul.list_item>li>a {
 
 .menu {
     display: flex;
-    width: 100%;
+    width: 80%;
 }
 
 ul.list_item>li>a {
@@ -358,8 +358,9 @@ ul.menu_child_2>li>a:hover {
  /* titles */
 .request {
     margin: auto;
+    width: 100%;
     padding: 32px;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
     color: #06619e;
     text-align: center;
@@ -485,7 +486,6 @@ ul.menu_child_2>li>a:hover {
 }
 .text_news_2 {
     line-height: 20px;
-    text-overflow: clip;
     color: black;
 }
 .main_see_more {
@@ -679,6 +679,7 @@ button.sign_up_button:hover {
 .col50_footer_2 {
     width: 50%;
     padding: 0 10px;
+    overflow: hidden;
 }
 .col25_footer_2 h4,.col50_footer_2 h4 {
     font-size: 20px;
