@@ -8,6 +8,7 @@ document.querySelector("#search_btn").onclick = () => {
 window.onclick = () => {
     searchForm.classList.remove("active");
 }
+
 /*Back to top button*/
 const backToTopbtn =  document.querySelector("#back_to_top");
 window.addEventListener("scroll", scrollFunction);

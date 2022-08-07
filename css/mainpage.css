@@ -436,16 +436,14 @@ ul.menu_child_2>li>a:hover {
     width: 200px;
     margin: 15px;
 }
-.img_container {
-    position: relative;
-}
-
 .text-new {
     text-align: center;
     color: #06619e;
+    font-size: 18px;
     font-weight: bold;
     display: none;
 }
+
    /*img and News*/
 .main_news {
     display: flex;
@@ -455,7 +453,6 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
     margin: auto;
 }
-
 .img_news {
     height: 300px;
     width: 322px;
