@@ -1,13 +1,10 @@
 /*click Search form */
-let searchForm = document.querySelector(".search_form");
+let search = document.querySelector(".search_form");
 
 document.querySelector("#search_btn").onclick = () => {
-    searchForm.classList.toggle("active");
+    search.classList.toggle("active");
 }
 
-window.onclick = () => {
-    searchForm.classList.remove("active");
-}
 $(document).ready(function() {
     $(".products_card").slick({
         slidestoShow: 4,
