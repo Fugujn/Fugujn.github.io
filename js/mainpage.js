@@ -31,10 +31,6 @@ document.querySelector("#search_btn").onclick = () => {
     searchForm.classList.toggle("active");
 }
 
-window.onclick = () => {
-    searchForm.classList.remove("active");
-}
-
 /*See more things*/
 var seeMore = document.querySelector(".js_see_more");
 var More = document.querySelectorAll(".news_see_more");

@@ -22,7 +22,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 .header__top {
@@ -41,7 +41,7 @@ img {
     align-items: center;
 }
 .logo img {
-    width: 300px;
+    width: 70%;
 }
 #menu-bar {
     display: none;
@@ -50,7 +50,6 @@ img {
 .list_item {
     display: flex;
     align-items: center;
-    padding-left: 100px;
 }
     
 ul.list_item>li>a {
@@ -65,7 +64,7 @@ ul.list_item>li>a {
 
 .menu {
     display: flex;
-    width: 100%;
+    width: 80%;
 }
 
 ul.list_item>li>a {
@@ -359,8 +358,9 @@ ul.menu_child_2>li>a:hover {
  /* titles */
 .request {
     margin: auto;
+    width: 100%;
     padding: 32px;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
     color: #06619e;
     text-align: center;
@@ -436,16 +436,14 @@ ul.menu_child_2>li>a:hover {
     width: 200px;
     margin: 15px;
 }
-.img_container {
-    position: relative;
-}
-
 .text-new {
     text-align: center;
     color: #06619e;
+    font-size: 18px;
     font-weight: bold;
     display: none;
 }
+
    /*img and News*/
 .main_news {
     display: flex;
@@ -455,7 +453,6 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
     margin: auto;
 }
-
 .img_news {
     height: 300px;
     width: 322px;
@@ -485,8 +482,9 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
 }
 .text_news_2 {
-    overflow-wrap: anywhere;
+    line-height: 1.5;
     color: black;
+    text-align: justify;
 }
 .main_see_more {
     text-align: center;
@@ -679,6 +677,7 @@ button.sign_up_button:hover {
 .col50_footer_2 {
     width: 50%;
     padding: 0 10px;
+    overflow: hidden;
 }
 .col25_footer_2 h4,.col50_footer_2 h4 {
     font-size: 20px;

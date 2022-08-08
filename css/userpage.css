@@ -141,6 +141,7 @@ ol {
     width: 100%;
     background-image: url("../images/backgound_content.jpg");
     background-size: 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-attachment: fixed;
