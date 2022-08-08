@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="./css/userpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./Izmir-master/izmir.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Online Banking- P&Q Bank</title>
     <script src="./js/userpage.js"></script>
 </head>
@@ -44,13 +47,14 @@
             </div>
             <div>
                 <ul class="flex">
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Giới thiệu</a>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Trang chủ</a>
                     </li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tỉ giá</a></li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">ATM</a></li>
-                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Mở
-                            thẻ
-                            Online</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Thẻ</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</li>
+                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Doanh
+                            nghiệp</a></li>
+                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Tin
+                            tức</a></li>
                     <li class="selection_header_menu"><a href="" class="selection_header_menu_btn"><img
                                 src="./images/Engish.png"></a></li>
                 </ul>
@@ -60,13 +64,13 @@
     <div class="content wrap flex">
         <div class="content_menu_frame">
             <div class="border flex">
-                <a href="./index.html" class="content_menu_btn">
-                    <span>Trang chủ</span>
+                <a href="" class="content_menu_btn">
+                    <span>Tỉ giá/Lãi xuất</span>
                 </a>
             </div>
             <div class="border flex">
                 <a href="" class="content_menu_btn">
-                    <span>Giao dịch</span>
+                    <span>ATM</span>
                 </a>
             </div>
             <div class="border flex">
@@ -83,26 +87,7 @@
                 <div class="user_zone wrap">
                     <div class="user_input flex">
                         <div class="user_area flex">
-                            <ul>
-                                <li>
-                                    <p class="user_area_text">Tên đăng nhập</p>
-                                    <div class="insert_keyboard">
-                                        <input type="text">
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="user_area_text">Mật khẩu đăng nhập</p>
-                                    <div class="insert_keyboard">
-                                        <input type="text">
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="user_area_text">Mã xác thực</p>
-                                    <div class="insert_keyboard">
-                                        <input type="text">
-                                    </div>
-                                </li>
-                            </ul>
+                            <button class="dn_btn"></button>
                         </div>
                         <div class="user_warning">
 
@@ -110,20 +95,131 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll_snap_type flex">
-                <div class="moving_image"><img src="./images/banner-epin.jpg" alt=""></div>
-                <div class="moving_image"><img src="./images/banner-happy-digital.jpg" alt=""></div>
-                <div class="moving_image"><img src="./images/banner-luu-y-lua-dao.jpg" alt=""></div>
-                <div class="moving_image"><img src="./images/banner-soft-otp.jpg" alt=""></div>
+            <div class="slide">
+                <div class="slide_show">
+                    <img src="./images/banner-epin.jpg" alt="">
+                </div>
+                <div class="slide_show">
+                    <img src="./images/banner-happy-digital.jpg" alt="">
+                </div>
+                <div class="slide_show">
+                    <img src="./images/banner-luu-y-lua-dao.jpg" alt="">
+                </div>
+                <div class="slide_show">
+                    <img src="./images/banner-soft-otp.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
+    <footer class="footer_1">
+        <div class="main_footer">
+            <div class="row_footer">
+                <div class="col_footer">
+                    <h4>Giới thiệu</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Tổng quan</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sơ đồ tổ chức</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sứ mệnh – Tầm nhìn</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Cơ cấu quản trị Ngân hàng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ban lãnh đạo P&Q Bank</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Danh hiệu Thành tích</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Cá nhân</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiết kiệm</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tín dụng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm thẻ</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ưu đãi thẻ</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Bảo hiểm</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Dịch vụ chuyển, nhận tiền</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Doanh nghiệp</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tín dụng doanh nghiệp</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Bảo lãnh</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Thanh toán quốc tế</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <h4>Truy cập nhanh</h4>
+                    <ul>
+                        <li><a href=" "><i class="arrow right"></i>Lãi suất</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Biểu phí - Hạn mức</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tỷ giá ngoại tệ - giá vàng</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tài liệu - biểu mẫu</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tra cứu Hóa đơn điện tử</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tra cứu Thư bảo lãnh</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Internet Banking</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Mạng lưới</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <div class="footer">
-        <div class="main_footer"></div>
-        <div class="information_footer"></div>
-    </div>
-    </div>
+        <div class="footer_2">
+            <div class="main_footer_2">
+                <div class="row_footer_2">
+                    <div class="col25_footer_2">
+                        <div class="logo_footer">
+                            <a href=""><img src="./images/p&qbank_logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col50_footer_2">
+                        <div>
+                            <h4>Ngân hàng CNTT P&Q</h4>
+                            <p>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp.HCM</p>
+                            <p>ĐT: 0328877290</p>
+                            Email:
+                            <a href="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col25_footer_2">
+                        <div>
+                            <h4>Liên kết nhanh</h4>
+                            <div class="social_link">
+                                <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="main_copyright">
+                <div class="row_copyright">
+                    <div class="col25_copyright">
+                        <a href="">
+                            <p>Điều khoản & Điều kiện sử dụng</p>
+                        </a>
+                    </div>
+                    <div class="col75_copyright">
+                        <p>Copyright &copy; 2022 P&Qbank. All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <a href="">
+        <button id="chat" class="animate__animated animate__fadeInUp animate__delay-4s"><i
+                class="fa-brands fa-facebook-messenger"></i>Chat</button>
+    </a>
+    <button id="back_to_top"><i class="fa-solid fa-angles-up"></i></button>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
