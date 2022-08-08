@@ -482,8 +482,9 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
 }
 .text_news_2 {
-    line-height: 20px;
+    line-height: 1.5;
     color: black;
+    text-align: justify;
 }
 .main_see_more {
     text-align: center;

@@ -332,28 +332,25 @@ ul.menu_child_2>li>a:hover {
  /*Products card banking*/
 .products_card {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin: auto;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
 
 }
 .card_banking {
-    width: 560px;
+    width: 47% !important;
     height: 620px;
     background-color: #e9ecec;
-    margin: 0 15px;
     margin-bottom: 30px;
-   
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .card_banking .img_card_bank {
     width: 60%;
     margin: auto;
     padding: 18px 0;
-
 }
 .card_banking h3 {
     text-align: center;
@@ -361,6 +358,7 @@ ul.menu_child_2>li>a:hover {
 .card_banking ul {
     align-items: center;
     justify-content: center;
+    text-align: justify;
     list-style-type: square !important;
     padding: 20px 60px;
     font-size: 1.1rem;
@@ -500,6 +498,41 @@ ul.menu_child_2>li>a:hover {
 }
 .icons:hover i, .icons:hover .text-of-icons {
     color: gold;
+}
+
+/*Main service*/
+.main_service {
+    margin: 50px 0 100px 0;
+}
+.main_service h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.services_row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.container_service {
+    height: 100%;
+    width: 280px;
+    margin: 5px 15px;
+
+}
+.container_service .text_service_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #06619e;
+    padding: 4px 0;
+}
+.container_service .text_service {
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
 }
  /*sign up email and install */
  .install {
