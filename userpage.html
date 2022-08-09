@@ -14,17 +14,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./Izmir-master/izmir.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Online Banking- P&Q Bank</title>
-    <script src="./js/userpage.js"></script>
 </head>
 
-<body onload="init()">
+<body>
     <div class="header">
         <div class="animated_background">
             <div class="header_img">
@@ -50,8 +49,6 @@
                     <li class="selection_header_menu"><a href="./index.html" class="selection_header_menu_btn">Trang
                             chủ</a>
                     </li>
-                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Thẻ</a>
-                    </li>
                     <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</li>
                     <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Doanh
                             nghiệp</a></li>
@@ -61,6 +58,38 @@
                                 src="./images/Engish.png"></a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <div class="dn_btn_modal" id="dn_btn_modal">
+        <div class="dn_btn_content">
+            <span class="close" onclick="close_login_frame()">&times;</span>
+            <div class="dn_btn_content_box">
+                <div id="bg_btn"></div>
+                <button type="button" class="toggle_btn" onclick="login()">
+                    Đăng nhập
+                </button>
+                <button type="button" class="toggle_btn" onclick="register()">
+                    Đăng ký
+                </button>
+            </div>
+            <div class="social_icons">
+                <img src="./images/fb.png" alt="">
+                <img src="./images/gp.png" alt="">
+                <img src="./images/tw.png" alt="">
+            </div>
+            <form id="login" class="input_group">
+                <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
+                <input type="text" class="input_field" placeholder="Mật khẩu" required>
+                <input type="checkbox" class="chech_box"><span>Ghi nhớ mật khẩu</span>
+                <button type="submit" class="submit_btn">Đăng nhập</button>
+            </form>
+            <form id="register" class="input_group">
+                <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
+                <input type="email" class="input_field" placeholder="Gmail" required>
+                <input type="text" class="input_field" placeholder="Mật khẩu" required>
+                <input type="checkbox" class="chech_box"><span>Tôi đồng ý với điều khoản của ngân hàng</span>
+                <button type="submit" class="submit_btn">Đăng ký</button>
+            </form>
         </div>
     </div>
     <div class="content wrap flex">
@@ -89,7 +118,7 @@
                 <div class="user_zone wrap">
                     <div class="user_input flex">
                         <div class="user_area flex">
-                            <button class="dn_btn"></button>
+                            <button class="dn_btn" id="dn_btn" onclick="login_frame()"></button>
                         </div>
                         <div class="user_warning">
 
@@ -222,6 +251,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/userpage.js"></script>
 </body>
 
 </html>
