@@ -87,7 +87,7 @@
                 <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
                 <input type="email" class="input_field" placeholder="Gmail" required>
                 <input type="text" class="input_field" placeholder="Mật khẩu" required>
-                <input type="checkbox" class="chech_box"><span>Tôi đồng ý với điều khoản của ngân hàng</span>
+                <input type="checkbox" class="chech_box" required><span>Tôi đồng ý với điều khoản của ngân hàng</span>
                 <button type="submit" class="submit_btn">Đăng ký</button>
             </form>
         </div>
@@ -121,7 +121,15 @@
                             <button class="dn_btn" id="dn_btn" onclick="login_frame()"></button>
                         </div>
                         <div class="user_warning">
-
+                            <h1 class="text">Công cụ</h1>
+                            <a href="" class="href_text">Tra cứu bảo lãnh</a>
+                            <h1 class="text">Trợ giúp</h1>
+                            <button class="add_document_btn"
+                                onclick="location.href='./link/CanhBaoGiaoDichGiaMaoDichVuNganHangDienTu.pdf'"><span>Khuyến
+                                    Cáo Bảo Mật Thông Tin</span></button>
+                            <button class="add_document_btn"
+                                onclick="location.href='./link/PQBank_clearCache.doc'"><span>Xóa cache trên web
+                                    browser</span></button>
                         </div>
                     </div>
                 </div>
