@@ -8,7 +8,7 @@ document.querySelector("#search_btn").onclick = () => {
 $(document).ready(function() {
     $(".products_card").slick({
         slidestoShow: 4,
-        slidestoScroll: 1,
+        slidestoScroll: 2,
         rows: 2,
         slidesPerRow: 2,
         cssEase: 'linear',
