@@ -66,7 +66,24 @@ ul.list_item>li>a {
     display: flex;
     width: 80%;
 }
-
+.menu .list_item .sub:first-child > a{
+    color: #0771b9;
+}
+.menu .list_item .sub:first-child > a::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 36px;
+    bottom: -12px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    display: block;
+    border-top: 8px solid #0771b9;
+    position: absolute;
+}
+.menu .list_item .sub:first-child:hover > a::before {
+    display: none;
+}
 ul.list_item>li>a {
     display: block;
     text-align: center;
@@ -183,7 +200,7 @@ div.menu_big::after {  /*add after to hover*/
 .number_phone {
     font-size: 20px;
     font-weight: bold;
-    color: yellow;
+    color: gold;
 }
 
 /* menu2 */
@@ -337,7 +354,6 @@ ul.menu_child_2>li>a:hover {
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-
 }
 .card_banking {
     width: 47% !important;
@@ -346,6 +362,9 @@ ul.menu_child_2>li>a:hover {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
+    overflow:auto;
+    justify-content: center;
+    text-align: center;
 }
 .card_banking .img_card_bank {
     width: 60%;
@@ -366,11 +385,7 @@ ul.menu_child_2>li>a:hover {
 .card_banking ul li {
     padding: 4px 0;
 }
-.card_banking .tick_compare {
-    padding: 40px;
-    justify-content: center;
-    text-align: center;
-}
+
 .card_banking:hover {
     background-color: gold;
 }
@@ -379,8 +394,22 @@ ul.menu_child_2>li>a:hover {
     text-decoration:underline;
     text-underline-position: above;
 }
+.slick-arrows {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
  /*check compare*/
-
+ .tick_compare {
+    justify-content: center;
+    text-align: center;
+ }
 .tick_compare input {
     appearance: none;
     border-radius: 50%;

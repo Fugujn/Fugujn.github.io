@@ -220,8 +220,13 @@
 }
 @media screen and (max-width: 952px) {
     .card_banking {
-        width: 90% !important;
-        overflow: scroll;
+        width: 93% !important;
+        overflow-y: scroll;
+    }
+} 
+@media screen and (max-width: 425px) {
+    .card_banking {
+        width: 85% !important;
     }
 
 } 
