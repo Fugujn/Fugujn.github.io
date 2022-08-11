@@ -25,6 +25,28 @@
 </head>
 
 <body>
+    <div class="mobile_menu">
+        <div class="container" onclick="open_menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="mobile_menu_modal" id="mobile_menu_modal">
+        <nav>
+            <ul>
+                <span class="menu_close">&times;</span>
+                <li><a href="./index.html">Trang
+                        chủ</a>
+                </li>
+                <li><a href="">Cá nhân</a></li>
+                <li><a href="">Doanh
+                        nghiệp</a></li>
+                <li><a href="">Tin
+                        tức</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="header">
         <div class="animated_background">
             <div class="header_img">
@@ -50,11 +72,9 @@
                     <li class="selection_header_menu"><a href="./index.html" class="selection_header_menu_btn">Trang
                             chủ</a>
                     </li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Doanh
-                            nghiệp</a></li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tin
-                            tức</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Doanh nghiệp</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tin tức</a></li>
                     <li class="selection_header_menu"><a href="" class="selection_header_menu_btn"><img
                                 src="./images/Engish.png"></a></li>
                 </ul>
@@ -63,7 +83,7 @@
     </div>
     <div class="dn_btn_modal" id="dn_btn_modal">
         <div class="dn_btn_content">
-            <span class="close" onclick="close_login_frame()">&times;</span>
+            <span class="close">&times;</span>
             <div class="dn_btn_content_box">
                 <div id="bg_btn"></div>
                 <button type="button" class="toggle_btn" onclick="login()">
@@ -119,7 +139,7 @@
                 <div class="user_zone wrap">
                     <div class="user_input flex">
                         <div class="user_area flex">
-                            <button class="dn_btn" id="dn_btn" onclick="login_frame()"></button>
+                            <button class="dn_btn" id="dn_btn"></button>
                         </div>
                         <div class="user_warning">
                             <h1 class="text">Công cụ</h1>

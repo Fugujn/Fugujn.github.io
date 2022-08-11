@@ -68,16 +68,23 @@ var dn_btn_modal = document.getElementById("dn_btn_modal");
 var dn_btn = document.getElementById("dn_btn");
 var close_span = document.getElementsByClassName("close")[0];
 
-function login_frame() {
+dn_btn.onclick = function () {
     dn_btn_modal.style.display = "block";
 }
 
-function close_login_frame() {
+close_span.onclick = function () {
     dn_btn_modal.style.display = "none";
 }
-
-window.onclick = function (event) {
-    if (event.target == dn_btn_modal) {
-        dn_btn_modal.style.display = "none";
-    }
+var mobile_menu_modal = document.getElementById("mobile_menu_modal");
+var close_menu = document.getElementsByClassName("change")[0];
+var hidden_mobile_menu = document.getElementsByClassName("mobile_menu")[0];
+function open_menu(x) {
+    x.classList.add("change");
+    mobile_menu_modal.style.display = "block";
+}
+var close_menu = document.getElementsByClassName("container")[0];
+var menu_close = document.getElementsByClassName("menu_close")[0];
+menu_close.onclick = function () {
+    close_menu.classList.remove("change");
+    mobile_menu_modal.style.display = "none";
 }
