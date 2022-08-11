@@ -11,7 +11,8 @@
     <meta http-equiv="refresh" content="10000" />
     <link rel="icon" type="image/png" href="./images/shortcut_icon.jpg">
     <link rel="stylesheet" href="./css/userpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="reponsive" href="./reponsive/userpagereponsive.css" <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -87,7 +88,7 @@
                 <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
                 <input type="email" class="input_field" placeholder="Gmail" required>
                 <input type="text" class="input_field" placeholder="Mật khẩu" required>
-                <input type="checkbox" class="chech_box"><span>Tôi đồng ý với điều khoản của ngân hàng</span>
+                <input type="checkbox" class="chech_box" required><span>Tôi đồng ý với điều khoản của ngân hàng</span>
                 <button type="submit" class="submit_btn">Đăng ký</button>
             </form>
         </div>
@@ -121,7 +122,15 @@
                             <button class="dn_btn" id="dn_btn" onclick="login_frame()"></button>
                         </div>
                         <div class="user_warning">
-
+                            <h1 class="text">Công cụ</h1>
+                            <a href="" class="href_text">Tra cứu bảo lãnh</a>
+                            <h1 class="text">Trợ giúp</h1>
+                            <button class="add_document_btn"
+                                onclick="location.href='./link/CanhBaoGiaoDichGiaMaoDichVuNganHangDienTu.pdf'"><span>Khuyến
+                                    Cáo Bảo Mật Thông Tin</span></button>
+                            <button class="add_document_btn"
+                                onclick="location.href='./link/PQBank_clearCache.doc'"><span>Xóa cache trên web
+                                    browser</span></button>
                         </div>
                     </div>
                 </div>
