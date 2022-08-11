@@ -7,10 +7,11 @@ document.querySelector("#search_btn").onclick = () => {
 
 $(document).ready(function() {
     $(".products_card").slick({
-        slidestoShow: 4,
+        slidestoShow: 2,
         slidestoScroll: 2,
         rows: 2,
         slidesPerRow: 2,
+        speed: 1000,
         cssEase: 'linear',
         prevArrow:"<button type='button' class='slick-prev slick-arrows'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next slick-arrows'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",   

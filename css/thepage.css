@@ -373,6 +373,8 @@ ul.menu_child_2>li>a:hover {
 }
 .card_banking h3 {
     text-align: center;
+    color: red;
+    
 }
 .card_banking ul {
     align-items: center;
