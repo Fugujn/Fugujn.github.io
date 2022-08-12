@@ -1,23 +1,138 @@
-@media screen and (max-width: 1000px){
+/*Reponsive for mobie*/
+@media screen and (max-width: 500px) {
+    .wrap {
+        padding: 15px;
+    }
+
+    .header_img {
+        width: 55%;
+        margin-left: 5%;
+    }
+
+    .selection_header {
+        display: none;
+    }
+
+    .content {
+        height: 500px;
+        background-position: left bottom;
+        background-attachment: unset;
+    }
+
+    .content_menu_frame {
+        margin-left: 0;
+    }
+
+    .main_content {
+        width: 80%;
+    }
+
+    .border {
+        width: 90px;
+        height: 30px;
+    }
+
+    .content_menu_btn {
+        padding: 5px;
+    }
+
+    .content_menu_btn span {
+        font-size: 10px;
+    }
+
+    .user_zone {
+        background: transparent;
+    }
+
+    .login_title {
+        display: none;
+    }
+
+    .user_area {
+        width: 75%;
+        border-right: none;
+        background-size: 100%;
+    }
+
+    .dn_btn {
+        width: 55px;
+        height: 55px;
+        margin-top: 78px;
+    }
+
+    .dn_btn_modal {
+        top: 150px;
+    }
+
+    .dn_btn_content {
+        width: 350px;
+        height: 450px;
+        margin: 6% 7%;
+    }
+
+    .user_warning {
+        display: none;
+        width: 0%;
+    }
+
+    .slide {
+        margin-left: 0;
+    }
+
+    .mobile_menu {
+        display: inline-block;
+    }
+}
+
+/* Responsive footer_1*/
+@media screen and (max-width: 1000px) {
     .col_footer {
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .col_footer {
         width: 100%;
     }
 }
+
 /* Responsive footer_2*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 
     .col25_footer_2 {
         width: 80%;
     }
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .col50_footer_2 {
         width: 100%;
+    }
+}
+
+/* Responsive copyright*/
+@media screen and (max-width: 1000px) {
+    .col25_copyright {
+        width: 100%;
+    }
+
+    .col75_copyright {
+        width: 100%;
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }

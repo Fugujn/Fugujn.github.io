@@ -10,9 +10,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv="refresh" content="10000" />
     <link rel="icon" type="image/png" href="./images/shortcut_icon.jpg">
-    <title>Online Banking- P&Q Bank</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/userpage.css">
+    <link rel="stylesheet" href="./reponsive/userpagereponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,12 +21,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./Izmir-master/izmir.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/userpage.css">
-    <link rel="stylesheet" href="./reponsive/userpagereponsive.css">
-    
+    <title>Online Banking- P&Q Bank</title>
 </head>
 
 <body>
+    <div class="mobile_menu">
+        <div class="container" onclick="open_menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="mobile_menu_modal" id="mobile_menu_modal">
+        <nav>
+            <ul>
+                <span class="menu_close">&times;</span>
+                <li><a href="./index.html">Trang
+                        chủ</a>
+                </li>
+                <li><a href="">Cá nhân</a></li>
+                <li><a href="">Doanh
+                        nghiệp</a></li>
+                <li><a href="">Tin
+                        tức</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="header">
         <div class="animated_background">
             <div class="header_img">
@@ -52,11 +72,9 @@
                     <li class="selection_header_menu"><a href="./index.html" class="selection_header_menu_btn">Trang
                             chủ</a>
                     </li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Doanh
-                            nghiệp</a></li>
-                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tin
-                            tức</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Cá nhân</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Doanh nghiệp</a></li>
+                    <li class="selection_header_menu"><a href="" class="selection_header_menu_btn">Tin tức</a></li>
                     <li class="selection_header_menu"><a href="" class="selection_header_menu_btn"><img
                                 src="./images/Engish.png"></a></li>
                 </ul>
@@ -65,7 +83,7 @@
     </div>
     <div class="dn_btn_modal" id="dn_btn_modal">
         <div class="dn_btn_content">
-            <span class="close" onclick="close_login_frame()">&times;</span>
+            <span class="close">&times;</span>
             <div class="dn_btn_content_box">
                 <div id="bg_btn"></div>
                 <button type="button" class="toggle_btn" onclick="login()">
@@ -121,7 +139,7 @@
                 <div class="user_zone wrap">
                     <div class="user_input flex">
                         <div class="user_area flex">
-                            <button class="dn_btn" id="dn_btn" onclick="login_frame()"></button>
+                            <button class="dn_btn" id="dn_btn"></button>
                         </div>
                         <div class="user_warning">
                             <h1 class="text">Công cụ</h1>
