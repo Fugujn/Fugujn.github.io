@@ -98,10 +98,14 @@
         text-align: center;
         margin: 0 auto;
     }
+    .cards i {
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
 }
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 338px) {
     .main_card {
-        width: 90%;
+        width: 100%;
     }
 
     .border_card {
@@ -110,7 +114,6 @@
         text-align: center;
         margin: 0 auto;
     }
-    
 }
 
 /* list img */
