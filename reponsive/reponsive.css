@@ -78,22 +78,27 @@
         width: 90%;
     }
     .border_card {
-        width: 50%;
+        width: 48%;
         padding-bottom: 26px;
         text-align: center;
         margin: 0 auto;
+    }
+    .cards i {
+        font-size: 60px;
+        margin-bottom: 40px;
     }
 }
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 350px) {
     .main_card {
-        width: 100%;
+        width: 90%;
     }
     .border_card {
-        width: 100%;
+        width: 90%;
         padding-bottom: 26px;
         text-align: center;
         margin: 0 auto;
     }
+    
 }
  /* list img */
  @keyframes right {
