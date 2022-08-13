@@ -536,7 +536,7 @@ marquee {
 #back_to_top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
     font-size: 24px;
     width: 50px;
     height: 50px;
@@ -723,6 +723,7 @@ marquee {
     top: 10px;
     right: 10px;
     display: none;
+    z-index: 11;
 }
 
 .container {
@@ -735,7 +736,10 @@ marquee {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #0771b9;
+    background: linear-gradient(to right, #06619e,
+            #0771b9, #b50c0ca9);
+    background-size: 400% 400%;
+    animation: animate-backgroud 5s infinite ease-in-out;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -757,17 +761,23 @@ marquee {
 .mobile_menu_modal {
     position: absolute;
     z-index: 10;
-    right: 0px;
+    right: 2px;
     top: 55px;
     display: none;
+    height: 850px;
+    background: linear-gradient(to right, #96ff03,
+            #fdfd1d, #fcb045);
+    background-size: 400% 400%;
+    animation: animate-backgroud 5s infinite ease-in-out;
+    opacity: 0.9;
+    border-radius: 10px;
+    width: 60%;
 }
 
 nav {
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    box-shadow: 5px 7px 10px rgba(0, 0, 0, .5);
+
 }
 
 nav ul {
@@ -784,19 +794,9 @@ nav ul li a {
     color: #000;
     padding: 10px 30px;
     height: 50px;
-    background: #0771b9;
-    opacity: 0.9;
+
 }
 
 nav ul li:hover a {
     color: #fdfd1d;
-}
-
-.menu_close {
-    position: absolute;
-    color: #fdfd1d;
-    z-index: 11;
-    right: 10px;
-    top: 0px;
-    font-size: 1.5em;
 }

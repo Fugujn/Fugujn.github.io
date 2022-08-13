@@ -22,11 +22,12 @@ $(document).ready(function () {
         ]
     });
 });
+/*Back to top button*/
 const backToTopbtn = document.querySelector("#back_to_top");
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-    if (window.pageYOffset > 50) {  //show backtotop
+    if (window.pageYOffset > 1000) {  //show backtotop
         if (!backToTopbtn.classList.contains("button_entrance")) {
             backToTopbtn.classList.remove("button_exit");
             backToTopbtn.classList.add("button_entrance");
@@ -78,13 +79,11 @@ close_span.onclick = function () {
 var mobile_menu_modal = document.getElementById("mobile_menu_modal");
 var close_menu = document.getElementsByClassName("change")[0];
 var hidden_mobile_menu = document.getElementsByClassName("mobile_menu")[0];
-function open_menu(x) {
+function active_button(x) {
     x.classList.add("change");
     mobile_menu_modal.style.display = "block";
 }
-var close_menu = document.getElementsByClassName("container")[0];
-var menu_close = document.getElementsByClassName("menu_close")[0];
-menu_close.onclick = function () {
-    close_menu.classList.remove("change");
+function close_button(x) {
+    x.classList.remove("change");
     mobile_menu_modal.style.display = "none";
 }
