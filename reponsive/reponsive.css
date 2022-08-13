@@ -67,6 +67,11 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 350px) {
+    .search_support input {
+        font-size: 10px;
+    }
+}
 
 /* Responsive columns cards*/
 
@@ -147,7 +152,39 @@
         display: block;
     }
 }
-
+ /*introduce product*/
+@media screen and (max-width: 1036px){
+    .intro_product {
+        display: block;
+    }
+    .intro_product_70 {
+        width: 100%;
+        margin: auto;
+    }
+    .intro_product_30 {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro_product_30 .intro_pro_content {
+        width: 45%;
+    }
+    .intro_pro_content .intro_module {
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 468px){
+    .intro_product_30 {
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+    .intro_product_30 .intro_pro_content {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
 /*reponsive news*/
 @media screen and (max-width:680px) {
     .img_news {

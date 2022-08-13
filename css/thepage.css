@@ -549,7 +549,6 @@ ul.menu_child_2>li>a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     margin: auto;
 }

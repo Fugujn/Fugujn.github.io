@@ -427,10 +427,8 @@ ul.menu_child_2>li>a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(../images/bg_yel.jpg);
-    background-size: 100%;
     margin: auto;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 .img_container{
     width: 200px;
@@ -444,6 +442,53 @@ ul.menu_child_2>li>a:hover {
     display: none;
 }
 
+  /*introduct Products */
+.introduce_main {
+    width: 100%;
+    background-image: url(../images/bg_yel.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+.introduce_main h1 {
+    text-align: center;
+    color: #06619e;
+    font-size: 2.8rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.intro_product {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: center;
+   
+}
+.intro_product_70 {
+    width: 75%;
+    margin-right: 50px;
+}
+.intro_product_30 {
+    width: 25%;
+}
+.intro_product_30 .intro_pro_content {
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+.intro_product_30 .intro_pro_content a img {
+    height: 100%;
+    width: 95%;
+    padding: 10px 0;
+}
+.intro_product_30 .intro_pro_content a .intro_module {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #0771b9;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
    /*img and News*/
 .main_news {
     display: flex;
@@ -503,6 +548,7 @@ ul.menu_child_2>li>a:hover {
     border: none;
     color: white;
     position: relative;
+    cursor: pointer;
 }
 .news_see_more {
     display: none;
