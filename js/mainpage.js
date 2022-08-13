@@ -24,6 +24,19 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $(".slide_intro_product").slick({
+        infinite: true,
+        slidestoShow: 1,
+        slidestoScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
+        cssEase: 'linear',
+    });
+});
+
 /*click Search form */
 let searchForm = document.querySelector(".search_form");
 
