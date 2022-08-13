@@ -382,6 +382,7 @@ ul.menu_child_2>li>a:hover {
     text-align: justify;
     list-style-type: square !important;
     padding: 20px 60px;
+    padding-bottom: 50px;
     font-size: 1.1rem;
 }
 .card_banking ul li {
@@ -395,6 +396,10 @@ ul.menu_child_2>li>a:hover {
     color: #06619e;
     text-decoration:underline;
     text-underline-position: above;
+}
+.card_banking ul li .info_of_card {
+    font-weight: bold;
+    color: #0771b9;
 }
 .slick-arrows {
     font-size: 30px;
