@@ -26,16 +26,16 @@
 
 <body>
     <div class="mobile_menu">
-        <div class="container" onclick="open_menu(this)">
+        <div class="container" onmouseenter="active_button(this)" onmouseleave="close_button(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
     </div>
-    <div class="mobile_menu_modal" id="mobile_menu_modal">
+    <div class="mobile_menu_modal" id="mobile_menu_modal" onmouseenter="active_button(hidden_mobile_menu)"
+        onmouseleave="close_button(hidden_mobile_menu)">
         <nav>
             <ul>
-                <span class="menu_close">&times;</span>
                 <li><a href="./index.html">Trang
                         chủ</a>
                 </li>
