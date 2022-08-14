@@ -131,6 +131,7 @@ ol {
     border: none;
     padding: 5px 10px 0px;
     float: left;
+    outline: none;
 }
 
 .search_main .search_field .icon-search {
