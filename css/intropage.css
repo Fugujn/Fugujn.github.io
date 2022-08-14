@@ -18,21 +18,6 @@ ol {
     list-style: none;
 }
 
-header {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 80px;
-}
-
-header h4 {
-    position: absolute;
-    left: 10%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-}
-
 /* Splash screen*/
 .intro {
     position: fixed;
@@ -43,6 +28,7 @@ header h4 {
     height: 100vh;
     background-color: #161616;
     transition: 1s;
+    z-index: 1000;
 }
 
 .logo_header {
@@ -53,21 +39,137 @@ header h4 {
     color: #ffffff;
 }
 
-.logo {
+.logo_slide {
     position: relative;
     display: inline-block;
     bottom: -20px;
     opacity: 0;
 }
 
-.logo.active {
+.logo_slide.active {
     bottom: 0;
     opacity: 1;
     transition: ease-in-out 0.5s;
 }
 
-.logo.fade {
+.logo_slide.fade {
     bottom: 150px;
     opacity: 0;
     transition: ease-in-out 0.5s;
+}
+
+/* Main screen*/
+.main_menu {
+    background: #ffffff;
+    width: 179px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 750;
+}
+
+.main_logo {
+    width: 100%;
+}
+
+.search_taskbar {
+    background: url(../images/bg-top-nav.png) repeat;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 42px;
+    z-index: 500;
+    padding-left: 179px;
+    transition: all 0.2s linear 0s;
+}
+
+.list_nav {
+    margin: 0px;
+    padding: 15px 0px 0px;
+}
+
+.list_nav li a {
+    text-transform: uppercase;
+    margin-left: 18px;
+    line-height: normal;
+    display: inline-block;
+    width: 85%;
+    cursor: pointer;
+}
+
+.list_nav .top_list_nav li a {
+    font-family: effraregular, Arial, Helvetica, sans-serif;
+    color: rgb(137, 137, 137);
+    padding: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.search_main label {
+    color: rgb(255, 255, 255);
+    padding: 10px 5px 0px 20px;
+    float: left;
+    font-size: 1rem;
+}
+
+.search_main .search_field {
+    float: left;
+    width: 185px;
+    height: 25px;
+    background: rgb(40, 40, 40);
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 7px;
+}
+
+.search_main .search_field input {
+    width: 160px;
+    height: 20px;
+    background: rgb(40, 40, 40);
+    color: rgb(133, 133, 133);
+    border: none;
+    padding: 5px 10px 0px;
+    float: left;
+}
+
+.search_main .search_field .icon-search {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon-search.png) 0px 0px no-repeat;
+    display: block;
+    float: right;
+    margin: 5px;
+}
+
+.top-tools {
+    float: right;
+    margin: 0px 20px 0px 0px;
+    position: relative;
+}
+
+.support-info {
+    display: inline-block;
+    padding: 0px 16px;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: top;
+}
+
+.support-info .icon {
+    display: inline-block;
+    margin: 0px 6px 0px 0px;
+    vertical-align: middle;
+}
+
+.icon.icon-info {
+    background: url(../images/icon-info.png) no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.support-info .text {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-family: effrabold, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
