@@ -525,7 +525,7 @@ ul.menu_child_2>li>a:hover {
     overflow-wrap: anywhere;
     margin: 2px 0;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     color: #06619e;
     width: 100%;

@@ -5,7 +5,7 @@ $(document).ready(function() {
         slidestoScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        fade: true,
+        
         dots: true,
         cssEase: 'linear',
         prevArrow:"<button type='button' class='slick-prev slick-arrows'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
@@ -26,7 +26,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".slide_intro_product").slick({
-        infinite: true,
         slidestoShow: 1,
         slidestoScroll: 1,
         autoplay: true,
