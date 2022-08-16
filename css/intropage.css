@@ -87,10 +87,14 @@ ol {
 }
 
 .list_nav .top_list_nav li a {
-    font-family: effraregular, Arial, Helvetica, sans-serif;
     color: rgb(137, 137, 137);
     padding: 10px 0px;
     font-size: 1.2rem;
+}
+
+.list_nav .bottom_list_nav li a {
+    color: rgb(137, 137, 137);
+    padding: 5px 10px;
 }
 
 /*Search taskbar */
