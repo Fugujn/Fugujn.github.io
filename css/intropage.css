@@ -95,6 +95,7 @@ ol {
 .list_nav .bottom_list_nav li a {
     color: rgb(137, 137, 137);
     padding: 5px 10px;
+    font-weight: bolder;
 }
 
 /*Search taskbar */
@@ -178,4 +179,30 @@ ol {
     color: rgb(255, 255, 255);
     font-family: effrabold, Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+
+/**/
+.block-news-grid {
+    margin: -120px 0px 0px;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+}
+
+.block-news-grid .news-col.col-1 {
+    width: 28.2%;
+}
+
+.block-news-grid .news-col {
+    float: left;
+}
+
+.block-news-grid .news-item {
+    margin-top: 2px;
+    position: relative;
+}
+
+.block-news-grid .news-item:first-child {
+    margin-top: 0px;
 }
