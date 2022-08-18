@@ -1,6 +1,6 @@
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo_header');
-let logoSpan = document.querySelectorAll('.logo');
+let logoSpan = document.querySelectorAll('.logo_slide');
 
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {

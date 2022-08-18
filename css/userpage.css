@@ -32,7 +32,7 @@ ol {
     padding: 25px;
 }
 
-@keyframes animate-backgroud {
+@keyframes animate-background {
     0% {
         background-position: 0 50%;
     }
@@ -54,7 +54,7 @@ ol {
     background: linear-gradient(to right, #96ff03,
             #fdfd1d, #fcb045);
     background-size: 400% 400%;
-    animation: animate-backgroud 5s infinite ease-in-out;
+    animation: animate-background 5s infinite ease-in-out;
 }
 
 .header_img {
