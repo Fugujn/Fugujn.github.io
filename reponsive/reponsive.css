@@ -418,7 +418,25 @@
     }
 
 }
-
+/*img promo*/
+@media screen and (max-width: 800px) {
+    .col_promotion {
+        width: 80% !important;
+        height: 350px !important;
+    }
+    .col_promotion a .img_promo img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .col_promotion {
+        width: 90% !important;
+        height: 260px !important;
+    }
+    .col_promotion a .img_promo img {
+        height: 200px;
+    }
+}
 /*icons promotion*/
 @media screen and (max-width: 1192px) {
     .main_icon {
