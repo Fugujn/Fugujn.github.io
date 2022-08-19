@@ -739,7 +739,7 @@ marquee {
     background: linear-gradient(to right, #06619e,
             #0771b9, #b50c0ca9);
     background-size: 400% 400%;
-    animation: animate-backgroud 5s infinite ease-in-out;
+    animation: animate-background 5s infinite ease-in-out;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -768,7 +768,7 @@ marquee {
     background: linear-gradient(to right, #96ff03,
             #fdfd1d, #fcb045);
     background-size: 400% 400%;
-    animation: animate-backgroud 5s infinite ease-in-out;
+    animation: animate-background 5s infinite ease-in-out;
     opacity: 0.9;
     border-radius: 10px;
     width: 60%;
