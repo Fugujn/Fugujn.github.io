@@ -77,6 +77,15 @@ ul.list_item>li>a:hover {
     transition: all 0.3s ease;
 }
 
+.menu .list_item .sub a {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-angle-down {
+    color: #fff;
+    display: none;
+}
+
 .sub:hover .menu_big {
     display: block !important;
 }
@@ -130,7 +139,11 @@ div.menu_big::after {  /*add after to hover*/
     left: 40px;
     position: absolute;
 }
-
+ /*button menu mobile*/
+.toggle_btn {
+    display: none;
+    font-size: 1.5rem;
+}
   /*sign_up*/
 .open_banking {
     font-weight: 500;
@@ -243,8 +256,19 @@ ul.menu_child_2>li>a {
 ul.menu_child_2>li>a:hover {
     color: rgb(237, 240, 58);
 }
+ /*menu mobile*/
+ .menu .list_item li:nth-child(1),
+ .menu .list_item li:nth-child(6),
+ .menu .list_item li:nth-child(7),
+ .menu .list_item li:nth-child(8),
+ .menu .list_item li:nth-child(9),
+ .menu .list_item li:nth-child(10),
+ .menu .list_item li:nth-child(12){
+    display: none;
+}
+
  /*header search-form*/
- #search_btn {
+#search_btn {
     cursor: pointer;
     user-select: none;
  }
@@ -263,7 +287,7 @@ ul.menu_child_2>li>a:hover {
 .dropbtn .search_form.active {
     transform: scaleY(1);
 }
-.dropbtn .search_form input {
+.dropbtn .search_form input,.sub input {
     height: 100%;
     width: 100%;
     font-size: 1.2rem;
@@ -272,7 +296,7 @@ ul.menu_child_2>li>a:hover {
     text-transform: none;
     border: none;
 }
-.dropbtn .search_form label {
+.dropbtn .search_form label,.sub label {
     cursor: pointer;
     font-size: 1.4rem;
     padding: 10px;
@@ -648,6 +672,7 @@ button.sign_up_button:hover {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
 .main_footer .row_footer .col_footer ul li i {
     border: solid white;
     border-width: 0 3px 3px 0;
@@ -836,8 +861,9 @@ marquee {
     font-size: 18px;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, .2);
-    color: black;
+    color: #fff;
+    background-color: #0a5e98;
+    border: none;
     cursor: pointer;
     border-radius: 50%;
     outline: none;
@@ -846,7 +872,7 @@ marquee {
     transition-property: backround-color, color;
 }
 #back_to_top:hover, #back_to_top:focus {
-    background-color: black;
+    background-color: #71afd5;
     color: white;
 }
 .button_entrance {
@@ -879,9 +905,4 @@ marquee {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
-}
-
-.toggle_btn {
-    display: none;
-    font-size: 1.2rem;
 }

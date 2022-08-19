@@ -5,42 +5,101 @@
     .toggle_btn {
         display: flex;
     }
-    .list_item li a i {
+    .list_item li a i:first-child {
         display: none;
     }
     .list_item {
         position: absolute;
         top: 100%;
-        right: 0;
-        background-color: #06619e;
-        width: 280px;
-        height: calc(113vh - 9.5rem);
+        left: 0;
+        background: linear-gradient(90deg, rgba(6,97,158,1) 38%, rgba(64,154,212,1) 96%, rgba(83,167,221,1) 100%);
+        width: 300px;
+        height: calc(110vh - 9.5rem);
         display: block;
         padding: 20px 0;
         overflow-x: auto;
+        margin-left: -18px;
+        font-weight: bold;
     }
     .list_item.active {
         width: 0;
     }
     .list_item li a {
         color: #fff !important ;
+        padding-bottom: 16px;
     }
     .menu .list_item .sub:first-child > a::before {
         display: none;
     }
-    .menu_big {
-        display: block;
+    .menu_big .menu_child{
+        display: none;
     }
     .menu_big .menu_child{
         position: relative;
     }
-    .menu_big .menu_child li{ 
-        background-color: transparent !important;
-        border-bottom: none !important;
-        margin-left: 6px;
-    }
     .header__hotline .sup_center {
         display: none;
+    }
+    .fa-angle-down,.fa-angle-up {
+        display: block;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    .menu .list_item li:nth-child(1),
+    .menu .list_item li:nth-child(6),
+    .menu .list_item li:nth-child(7),
+    .menu .list_item li:nth-child(8),
+    .menu .list_item li:nth-child(9),
+    .menu .list_item li:nth-child(10),
+    .menu .list_item li:nth-child(12){
+        display: block ;
+        font-weight: bold;
+    }
+    .menu .list_item li:nth-child(6) a i,
+    .menu .list_item li:nth-child(7) a i{
+        display: block;
+    }
+    .menu .list_item li:nth-child(11){
+        text-align: center;
+        background-color: gold;
+        width: 200px;
+        align-items: center;
+        margin: auto;
+        border-radius: 8px;
+    }
+    .menu .list_item li:nth-child(11) a{
+        color: #06619e !important;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
+    .open_banking {
+        position: relative;
+        background: linear-gradient(90deg, rgba(244,216,55,1) 0%, rgba(247,233,118,1) 70%, rgba(230,225,196,1) 100%, rgba(83,167,221,1) 100%);
+        padding: 3px;
+    }
+    .open_banking::before {
+        display: none;
+    }
+    .menu .list_item li:nth-child(12){
+        color: #fff;
+        font-size: 2.2rem;
+        margin-left: 100px;
+}
+    .menu .list_item li:nth-child(12) i{
+        padding: 8px 2px;
+    }
+    .menu .list_item li:last-child {
+        padding-bottom: 200px;
+        
+    }
+    .sub input {
+        height: 43px;
+        width: 70%;
+        margin-right: -3px;
+        margin-bottom: 16px;
+    }
+    .sub label {
+        color: #fff;
     }
 }
 

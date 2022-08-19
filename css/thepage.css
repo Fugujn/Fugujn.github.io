@@ -94,6 +94,15 @@ ul.list_item>li>a:hover {
     transition: all 0.3s ease;
 }
 
+.menu .list_item .sub a {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-angle-down,.fa-angle-up {
+    color: #fff;
+    display: none;
+}
+
 .sub:hover .menu_big {
     display: block !important;
 }
@@ -146,6 +155,12 @@ div.menu_big::after {  /*add after to hover*/
     bottom: -12px;
     left: 40px;
     position: absolute;
+}
+
+/*button menu mobile*/
+.toggle_btn {
+    display: none;
+    font-size: 1.5rem;
 }
 
   /*sign_up*/
@@ -261,8 +276,18 @@ ul.menu_child_2>li>a {
 ul.menu_child_2>li>a:hover {
     color: rgb(237, 240, 58);
 }
+/*menu mobile*/
+.menu .list_item li:nth-child(1),
+.menu .list_item li:nth-child(6),
+.menu .list_item li:nth-child(7),
+.menu .list_item li:nth-child(8),
+.menu .list_item li:nth-child(9),
+.menu .list_item li:nth-child(10),
+.menu .list_item li:nth-child(12){
+    display: none;
+}
  /*header search-form*/
- #search_btn {
+#search_btn {
     cursor: pointer;
     user-select: none;
  }
@@ -282,7 +307,7 @@ ul.menu_child_2>li>a:hover {
 .dropbtn .search_form.active {
     transform: scaleY(1);
 }
-.dropbtn .search_form input {
+dropbtn .search_form input,.sub input {
     height: 100%;
     width: 100%;
     font-size: 1.2rem;
@@ -291,12 +316,13 @@ ul.menu_child_2>li>a:hover {
     text-transform: none;
     border: none;
 }
-.dropbtn .search_form label {
+.dropbtn .search_form label,.sub label {
     cursor: pointer;
     font-size: 1.4rem;
     padding: 10px;
     background-color: #06619e;
 }
+
  /*end header*/
   /*img ads module*/
 .img_ads_module {
@@ -856,5 +882,5 @@ marquee {
 
 .toggle_btn {
     display: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
