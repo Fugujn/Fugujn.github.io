@@ -36,6 +36,11 @@ $(document).ready(function() {
     });
 });
 
+let menuMobile = document.querySelector(".list_item");
+
+document.querySelector("#menu_btn").onclick = () => {
+    menuMobile.classList.toggle("active");
+}
 /*click Search form */
 let searchForm = document.querySelector(".search_form");
 

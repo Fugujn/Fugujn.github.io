@@ -5,6 +5,11 @@ document.querySelector("#search_btn").onclick = () => {
     search.classList.toggle("active");
 }
 
+let menuMobile = document.querySelector(".list_item");
+
+document.querySelector("#menu_btn").onclick = () => {
+    menuMobile.classList.toggle("active");
+}
 $(document).ready(function() {
     $(".products_card").slick({
         slidestoShow: 2,
@@ -22,6 +27,7 @@ $(document).ready(function() {
                     rows: 2,
                     slidesPerRow: 1,
                 }
+                
             }
         ]    
     });

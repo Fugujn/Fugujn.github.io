@@ -86,7 +86,6 @@ ul.list_item>li>a {
 }
 ul.list_item>li>a {
     display: block;
-    text-align: center;
     position: relative;
 }
 
@@ -197,7 +196,7 @@ div.menu_big::after {  /*add after to hover*/
     border: 2px solid white;
     border-radius: 50%;
 }
-.number_phone {
+.number_phone a{
     font-size: 20px;
     font-weight: bold;
     color: gold;
@@ -853,4 +852,9 @@ marquee {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+}
+
+.toggle_btn {
+    display: none;
+    font-size: 1.2rem;
 }
