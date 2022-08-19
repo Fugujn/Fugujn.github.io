@@ -40,6 +40,10 @@
         font-size: 10px;
     }
 
+    .login_frame {
+        width: 85%;
+    }
+
     .user_zone {
         background: transparent;
     }

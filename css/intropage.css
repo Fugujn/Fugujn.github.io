@@ -181,28 +181,106 @@ ol {
     font-size: 1rem;
 }
 
-/**/
-.block-news-grid {
-    margin: -120px 0px 0px;
-    padding: 0px 20px;
+/*slide_show*/
+.slide_show {
+    padding-left: 179px;
+    padding-top: 42px;
+    position: fixed;
+}
+
+.slide_show_bg {
+    height: 100vh;
+    width: 90%;
+    position: absolute;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.grid {
+    display: block;
+    width: 90%;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.l-6 {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.slide_infor,
+.slide_number {
+    padding: 6.4rem;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
-    z-index: 100;
-    width: 100%;
+    z-index: 12;
 }
 
-.block-news-grid .news-col.col-1 {
-    width: 28.2%;
+.headline {
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #a8a8a8;
+    font-size: 42px;
 }
 
-.block-news-grid .news-col {
+.see_more-btn {
+    background: url(../images/bg-home-slider-link-1.jpg) no-repeat;
+    width: 158px;
+    background-size: 100%;
+    color: #fff;
     float: left;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
 }
 
-.block-news-grid .news-item {
-    margin-top: 2px;
-    position: relative;
+.slide_infor-name-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.block-news-grid .news-item:first-child {
-    margin-top: 0px;
+.slide_number-list {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 350px;
+}
+
+.slide_direct {
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: #ccc;
+    margin: 0 1.2rem;
+}
+
+.slide_number-link {
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: #ffffff;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+}
+
+.slide-active {
+    font-size: 4.8rem;
+    color: #ff3f00;
+    transition: 0.4s;
 }
