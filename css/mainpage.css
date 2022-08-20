@@ -651,13 +651,16 @@ ul.menu_child_2>li>a:hover {
     border: 1px solid #cad1d3;
 }
 .sign_up_button {
-    border: none;
     padding: 8px 10px;
     background-color: #06619e;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
+    border: 6px solid transparent;
+    border-image: linear-gradient(-45deg, #76c0f7, #8776f7);
+    border-image-slice: 1;
+
 }
 .sign_up_button a {
     color: white;
