@@ -1,0 +1,30 @@
+@media screen and (max-width: 1212px) {
+    .menu .list_item .sub .menu_big {
+        display: block !important;
+    }
+    .menu .list_item .sub .menu_big .menu_child {
+        display: block !important;
+    } 
+    .menu .list_item .sub .menu_big .menu_child{
+        position: relative !important;
+    }
+    .menu .list_item .sub .menu_big .menu_child li{
+        padding: 0 0 6px 0;
+        background-color: transparent !important;
+        border-bottom: none !important;
+        margin-left: 30px;
+    }
+    .menu .list_item .sub:nth-child(3) .menu_big {
+        display: none !important;
+    }
+    .menu .list_item .sub:nth-child(4) .menu_big {
+        display: none !important;
+    }
+    .list_item .sub:nth-child(2) > a,.list_item .sub:nth-child(2) i{
+        color: gold !important;
+    }
+    .menu .list_item li:nth-child(6) a i,
+    .menu .list_item li:nth-child(7) a i{
+        display: none !important;
+    }
+}
