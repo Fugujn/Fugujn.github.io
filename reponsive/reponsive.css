@@ -157,25 +157,28 @@
     .search_support input {
         width: 80%;
         font-size: 20px;
-        margin: auto;
         text-align: center;
     }
 }
 
-@media screen and (max-width: 387px) {
+@media screen and (max-width: 500px) {
     .search_support input {
         left: 0;
-        width: 70%;
-        font-size: 14px;
+        width: 100%;
+        font-size: 16px;
         text-align: center;
     }
 }
 @media screen and (max-width: 350px) {
     .search_support input {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
-
+@media screen and (max-width: 200px) {
+    .search_support input {
+        font-size: 11px;
+    }
+}
 /* Responsive columns cards*/
 
 @media screen and (max-width: 1167px) {

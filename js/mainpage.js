@@ -1,3 +1,31 @@
+//Splash screen-js
+let intro = document.querySelector('.intro');
+let logo = document.querySelector('.logo_header');
+let logoSpan = document.querySelectorAll('.logo_slide');
+
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        logoSpan.forEach((span, idx) => {
+            setTimeout(() => {
+                span.classList.add('active');
+            }, (idx + 1) * 400)
+        });
+
+        setTimeout(() => {
+            logoSpan.forEach((span, idx) => {
+                setTimeout(() => {
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+                }, (idx + 1) * 50)
+            })
+        }, 2000)
+
+        setTimeout(() => {
+            intro.style.top = '-100vh'
+        }, 2300)
+    })
+})
+// Slide ads
 $(document).ready(function() {
     $(".slide").slick({
         infinite: true,
@@ -5,7 +33,7 @@ $(document).ready(function() {
         slidestoScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        
+        fade: true,
         dots: true,
         cssEase: 'linear',
         prevArrow:"<button type='button' class='slick-prev slick-arrows'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
@@ -35,7 +63,7 @@ $(document).ready(function() {
         cssEase: 'linear',
     });
 });
-
+ //click menu mobile
 let menuMobile = document.querySelector(".list_item");
 
 document.querySelector("#menu_btn").onclick = () => {
