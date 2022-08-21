@@ -16,8 +16,8 @@
         width: 300px;
         height: calc(110vh - 9.5rem);
         display: block;
+        overflow-y: scroll;
         padding: 20px 0;
-        overflow-x: auto;
         margin-left: -18px;
         font-weight: bold;
     }
@@ -26,7 +26,7 @@
     }
     .list_item li a {
         color: #fff !important ;
-        padding-bottom: 16px;
+        padding-bottom: 20px;
     }
     .menu .list_item .sub:first-child > a::before {
         display: none;
