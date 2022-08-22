@@ -194,13 +194,17 @@ div.menu_big::after {  /*add after to hover*/
 .open_banking {
     font-weight: 500;
     position: relative;
-    
+    background-image: linear-gradient(#0a5e98, #0771b9);
+    padding: 3px;
+    border: 6px solid transparent;
+    border-image:linear-gradient(90deg, rgba(5,114,251,1) 5%, rgba(66,200,242,0.9951330874146533) 52%, rgba(66,200,242,1) 52%, rgba(0,251,168,1) 100%);
+    border-image-slice: 1;
 }
 .open_banking::before {
     content:"";
     position: absolute;
-    background-color: #06619e;
-    top: 22px;
+    background-color: gold;
+    top: 30px;
     left: 0;
     height: 5px;
     width: 100%;
@@ -210,6 +214,14 @@ div.menu_big::after {  /*add after to hover*/
 .open_banking:hover::before {
     transform: scaleX(1);
     transition: linear 0.5s;
+}
+.open_banking a {
+    color: #fff !important;
+    padding: 5px 3px;
+    font-style: italic;
+}
+.open_banking:hover a {
+    color: gold !important ;
 }
 
     /*header_2*/
@@ -532,7 +544,6 @@ ul.menu_child_2>li>a:hover {
     margin: auto;
     padding-bottom: 30px;
     text-align: center;
-   
 }
 .intro_product_70 {
     width: 75%;
@@ -558,6 +569,11 @@ ul.menu_child_2>li>a:hover {
     font-size: 1.1rem;
     font-weight: bold;
 }
+.intro_product_30 .intro_pro_content a:hover .intro_module div:first-child {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
    /*img and News*/
 .main_news {
     display: flex;
@@ -706,7 +722,7 @@ ul.menu_child_2>li>a:hover {
     border: 6px solid transparent;
     border-image: linear-gradient(-45deg, #76c0f7, #8776f7);
     border-image-slice: 1;
-
+    cursor: pointer;
 }
 .sign_up_button a {
     color: white;

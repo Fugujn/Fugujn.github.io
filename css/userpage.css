@@ -585,11 +585,12 @@ marquee {
     position: fixed;
     bottom: 20px;
     right: 40px;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, .2);
-    color: black;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #0a5e98;
+    border: none;
     cursor: pointer;
     border-radius: 50%;
     outline: none;
@@ -597,10 +598,8 @@ marquee {
     transition-timing-function: ease-in-out;
     transition-property: backround-color, color;
 }
-
-#back_to_top:hover,
-#back_to_top:focus {
-    background-color: black;
+#back_to_top:hover, #back_to_top:focus {
+    background-color: #71afd5;
     color: white;
 }
 

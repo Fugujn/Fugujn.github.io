@@ -11,6 +11,7 @@
     }
     .toggle_btn {
         display: flex;
+        color: #06619e;
     }
     .list_item li a i:first-child {
         display: none;
@@ -248,7 +249,11 @@
         transform: translateX(0%);
     }
 }
-
+@media screen and (max-width: 1150px) {
+    .text-new {
+        display: block;
+    }
+}
 @media screen and (max-width: 867px) {
     .img_container {
         animation: left 1.5s ease-in;
@@ -260,11 +265,8 @@
         animation: right 1.5s ease-in;
         animation-delay: 1s;
     }
-
-    .text-new {
-        display: block;
-    }
 }
+
  /*introduce product*/
 @media screen and (max-width: 1036px){
     .intro_product {
