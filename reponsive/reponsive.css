@@ -103,6 +103,9 @@
         padding-bottom: 200px;
         
     }
+    .menu .list_item .sub:nth-child(2) > a::before {
+        display: none;
+    }
     .sub input {
         height: 43px;
         width: 70%;
@@ -300,6 +303,7 @@
         margin: 20px auto;
     }
 }
+
 /*reponsive news*/
 @media screen and (max-width:680px) {
     .img_news {
@@ -434,12 +438,15 @@
         overflow-y: scroll;
     }
 }
-
 @media screen and (max-width: 425px) {
+    .card_banking {
+        width: 91% !important;
+    }
+}
+@media screen and (max-width: 300px) {
     .card_banking {
         width: 85% !important;
     }
-
 }
 /*img promo*/
 @media screen and (max-width: 800px) {
