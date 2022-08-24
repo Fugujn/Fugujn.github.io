@@ -75,9 +75,27 @@ ol {
 }
 
 /* Main screen*/
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 .main_menu {
-    background: #ffffff;
+    background: linear-gradient(to right, #96ff03,
+            #fdfd1d, #fcb045);
+    background-size: 400% 400%;
+    animation: animate-background 5s infinite ease-in-out;
     width: 179px;
+    height: 100vh;
     position: fixed;
     top: 0px;
     left: 0px;

@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    .main_menu {
+        display: none;
+    }
+
+    .search_taskbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {}
