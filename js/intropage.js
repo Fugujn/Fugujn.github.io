@@ -1,9 +1,8 @@
-//Splash screen-js
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo_header');
-let logoSpan = document.querySelectorAll('.logo_slide');
-
 window.addEventListener('DOMContentLoaded', () => {
+    //Splash screen-js
+    let intro = document.querySelector('.intro');
+    let logo = document.querySelector('.logo_header');
+    let logoSpan = document.querySelectorAll('.logo_slide');
     setTimeout(() => {
         logoSpan.forEach((span, idx) => {
             setTimeout(() => {
@@ -25,17 +24,14 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 2300)
     })
 })
-//Main_menu
 window.addEventListener('load', function () {
-    const listItems = $('.list_nav li')
+    //Main_menu
+    const listItems = $('.list_nav .bottom_list_nav li')
     listItems.click(function () {
-        $('.icon-active').removeClass('icon-active')
+        $('.bottom_list_nav .icon-active').removeClass('icon-active')
         $(this).addClass('icon-active')
     })
-
-})
-// Slide_show-js
-window.addEventListener('load', function () {
+    // Slide_show-js
     const sliderItems = $('.slide_show_bg-img');
     var sliderLength = sliderItems.length;
     var pre = $('.slide_direct.pre');
@@ -43,10 +39,10 @@ window.addEventListener('load', function () {
     var number = $('.slide_number-link');
     var headLine = $('.headline');
     var headLineItem = [
-        'RA MẮT ACB ONE BIZ- THƯƠNG HIỆU NGÂN HÀNG SỐ ĐỒNG HÀNH CÙNG DOANH NGHIỆP',
-        'ACB “KHÔNG PHÍ” – GÓI ƯU ĐÃI GIÚP DOANH NGHIỆP KHÔNG LO VỀ PHÍ KHI GIAO DỊCH ONLINE',
-        'ACB CHÍNH THỨC RA MẮT THƯƠNG HIỆU NGÂN HÀNG SỐ ACB ONE',
-        'Thông tin cảnh báo SMS giả mạo ACB lừa đảo khách hàng']
+        'RA MẮT PQ BANKING- THƯƠNG HIỆU NGÂN HÀNG SỐ ĐỒNG HÀNH CÙNG DOANH NGHIỆP',
+        'PQ BANK “KHÔNG PHÍ” – GÓI ƯU ĐÃI GIÚP DOANH NGHIỆP KHÔNG LO VỀ PHÍ KHI GIAO DỊCH ONLINE',
+        'PQ BANK CHÍNH THỨC RA MẮT THƯƠNG HIỆU NGÂN HÀNG SỐ ONE BANK',
+        'Thông tin cảnh báo SMS giả mạo PQ BANK lừa đảo khách hàng']
     function getPosition() {
         let curr = $('.slide_number-link').filter('.slide-active');
         let index = curr.index('.slide_number-link');
@@ -147,4 +143,13 @@ window.addEventListener('load', function () {
     function addAtr(pos) {
         headLine.text(headLineItem[pos]);
     }
+    //Seemore
+    var seeMore = document.querySelector(".js_see_more");
+    var More = document.querySelectorAll(".news_see_more");
+    var d = 0;
+    seeMore.addEventListener("click", function () {
+        for (i = 0; i < 4; i++)
+            More[d++].style.display = "block";
+        if (d == More.length) seeMore.style.display = "none";
+    })
 })
