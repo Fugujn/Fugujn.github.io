@@ -415,27 +415,118 @@ ul.menu_child_2>li>a:hover {
     background: #0a5e98;
 }
   /*end auto slide*/
- /* support to help */
-.help_container {
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    display: inline-block;
+ /*img ads module*/
+ .img_ads_module {
+    padding-bottom: 20px;
 }
-.search_support i{
-    font-size: 30px;
-    color: gray;
-    position: absolute;
-
-}
-.search_support input {
-    width: 460px;
-    border: none;
-    font-size: 30px;
-    line-height: 28px;
-    outline: none;
+.module_content {
     position: relative;
-    left: 38px;
+}
+.module_content .main_breadcrumb .container_breadcrumb .breadcrumb{
+    position: absolute;
+    display: flex;
+    bottom: 3px;
+    left: 0;
+    background: rgba(0,0,0,.2);
+    padding: 10px 20px;
+    width: 100%;
+}
+.container_breadcrumb .breadcrumb li {
+    padding: 0 6px;
+}
+.container_breadcrumb .breadcrumb li a{
+    color: white;
+}
+.container_breadcrumb .breadcrumb .text_bread a:hover{
+    color: #06619e;
+    text-decoration:underline;
+    text-underline-position: above;
+}
+.main_breadcrumb .container_breadcrumb .breadcrumb li i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 6px;
+}
+ /* titles */
+ .request {
+    margin: auto;
+    padding: 40px 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #06619e;
+    text-align: center;
+    border-top: 1px solid #06619e;
+    padding-bottom: 28px;
+}
+ /*end title*/
+ /*currency exchange*/
+
+.container_current {
+    background-color: #fff;
+    width: 550px;
+    height: 360px;
+    padding: 20px;
+    box-shadow: 0px 0px 50px rgba(0, 0,0,0.6);
+    border-radius: 5px;
+    margin: auto;
+}
+.rate1 {
+    color: gray;
+}
+.rate2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.swap {
+    margin-top: 45px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 26px;
+}
+.options select {
+    padding: 2%;
+    width: 75px;
+}
+.input input {
+    all: unset;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 180px;
+    height: 48px;
+    padding: 5px;
+    background-color: gainsboro;
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    appearance: textfield;
+}
+.target {
+    transform: translateX(-5%);
+}
+.result {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #06619e;
+    outline: none;
+    border: none;
+    border-radius: 5px; 
+}
+.result:active {
+    background-color: #0771b9;
 }
 /*sign up email and install */
 .install {
