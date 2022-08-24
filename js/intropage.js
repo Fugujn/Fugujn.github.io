@@ -148,7 +148,7 @@ window.addEventListener('load', function () {
     var More = document.querySelectorAll(".news_see_more");
     var d = 0;
     seeMore.addEventListener("click", function () {
-        for (i = 0; i < 4; i++)
+        for (i = 0; i < 3; i++)
             More[d++].style.display = "block";
         if (d == More.length) seeMore.style.display = "none";
     })
