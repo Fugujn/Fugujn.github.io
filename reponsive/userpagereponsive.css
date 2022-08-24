@@ -1,5 +1,39 @@
-/*Reponsive for mobie*/
-@media screen and (max-width: 500px) {
+/*Reponsive for tablets*/
+@media screen and (max-width:1024px) {
+    .selection_header {
+        display: none;
+    }
+
+    .content_menu_frame {
+        margin-left: 0;
+        width: 20%;
+    }
+
+    .main_content {
+        width: 70%;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .login_title {
+        display: none;
+    }
+
+    .menu__item {
+        font-size: 25px;
+    }
+
+    .user_area {
+        width: 55%;
+        background-size: 60%;
+    }
+
+}
+
+/*Reponsive for phones*/
+@media screen and (max-width: 480px) {
     .wrap {
         padding: 15px;
     }
@@ -92,39 +126,6 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .selection_header {
-        display: none;
-    }
-
-    .content_menu_frame {
-        margin-left: 0;
-        width: 20%;
-    }
-
-    .main_content {
-        width: 70%;
-    }
-
-    .hamburger-menu {
-        display: inline-block;
-    }
-
-    .login_title {
-        display: none;
-    }
-
-    .menu__item {
-        font-size: 25px;
-    }
-
-    .user_area {
-        width: 55%;
-        background-size: 60%;
-    }
-
-}
-
 /* Responsive footer_1*/
 @media screen and (max-width: 1024px) {
     .col_footer {
@@ -133,7 +134,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .col_footer {
         width: 100%;
     }
@@ -147,7 +148,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .col50_footer_2 {
         width: 100%;
     }
