@@ -103,14 +103,3 @@ dn_btn.onclick = function () {
 close_span.onclick = function () {
     dn_btn_modal.style.display = "none";
 }
-var mobile_menu_modal = document.getElementById("mobile_menu_modal");
-var close_menu = document.getElementsByClassName("change")[0];
-var hidden_mobile_menu = document.getElementsByClassName("mobile_menu")[0];
-function active_button(x) {
-    x.classList.add("change");
-    mobile_menu_modal.style.display = "block";
-}
-function close_button(x) {
-    x.classList.remove("change");
-    mobile_menu_modal.style.display = "none";
-}

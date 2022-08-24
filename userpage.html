@@ -30,27 +30,17 @@
             <span class="logo_slide">P&Q</span><span class="logo_slide">Bank.</span>
         </h1>
     </div>
-    <div class="mobile_menu">
-        <div class="container" onmouseenter="active_button(this)" onmouseleave="close_button(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>
-    <div class="mobile_menu_modal" id="mobile_menu_modal" onmouseenter="active_button(hidden_mobile_menu)"
-        onmouseleave="close_button(hidden_mobile_menu)">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Trang
-                        chủ</a>
-                </li>
-                <li><a href="">Cá nhân</a></li>
-                <li><a href="">Doanh
-                        nghiệp</a></li>
-                <li><a href="">Tin
-                        tức</a></li>
-            </ul>
-        </nav>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Trang chủ</a></li>
+            <li><a class="menu__item" href="#">Cá nhân</a></li>
+            <li><a class="menu__item" href="#">Doanh nghiệp</a></li>
+            <li><a class="menu__item" href="#">Tin tức</a></li>
+        </ul>
     </div>
     <div class="header">
         <div class="animated_background">

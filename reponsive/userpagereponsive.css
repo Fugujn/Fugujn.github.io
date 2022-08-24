@@ -6,7 +6,7 @@
 
     .header_img {
         width: 55%;
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
     .selection_header {
@@ -87,7 +87,7 @@
         margin-left: 0;
     }
 
-    .mobile_menu {
+    .hamburger-menu {
         display: inline-block;
     }
 }
