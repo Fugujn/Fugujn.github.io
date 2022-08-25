@@ -857,3 +857,78 @@ marquee {
     background-color: #fdfd1d;
     color: #0771b9;
 }
+
+/*sign up email and install */
+.install {
+    background-color: #f1f3f2;
+    padding: 4px 0;
+}
+
+.install_container {
+    width: 80%;
+    margin: auto;
+}
+
+.row_install {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col25_sign_install {
+    width: 25%;
+    margin-top: 3px;
+}
+
+.col50_sign_install {
+    width: 50%;
+}
+
+.col25_sign_install img {
+    width: 40%;
+
+}
+
+.sign_up_email_text input {
+    top: -1px;
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #cad1d3;
+}
+
+.sign_up_button {
+    padding: 8px 10px;
+    background-color: #06619e;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border: 6px solid transparent;
+    border-image: linear-gradient(-45deg, #76c0f7, #8776f7);
+    border-image-slice: 1;
+    cursor: pointer;
+}
+
+.sign_up_button a {
+    color: white;
+}
+
+button.sign_up_button:hover {
+    box-shadow: 2px 2px #53a7ea, 3px 3px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+/* arrow right */
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.main_footer .row_footer .col_footer ul li i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 6px;
+}
