@@ -45,7 +45,7 @@ function populateOptions(){
 function convert(val, fromCurr, toCurr) {
     let v = (val/rates[fromCurr]) * rates[toCurr];
     let v1 = v.toFixed(4);
-    return v1 == 0.0 ? v.toFixed(4) : v1;
+    return v1 == 0.0 ? v.toString() : v1;
 }
 
 function displayRate(){
