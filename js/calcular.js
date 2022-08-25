@@ -11,79 +11,36 @@ document.querySelector("#menu_btn").onclick = () => {
     menuMobile.classList.toggle("active");
 }
 
-let rate1 = document.querySelector(".rate1");
-let rate2 = document.querySelector(".rate2");
-let resultBtn = document.querySelector(".result");
-let selects = document.querySelectorAll(".options select");
-let sel1 = selects[0];
-let sel2 = selects[1];
-let inputs = document.querySelectorAll(".input input");
-let inpt1 = inputs[0];
-let inpt2 = inputs[1];
-
-let rates = {};
-let requestURL = "https://api.exchangerate.host/latest?base=USD";
-
-fetchRates();
-
-async function fetchRates(){
-    let res = await fetch(requestURL);
-    res = await res.json();
-    rates = res.rates;
-    populateOptions();
-}
-
-function populateOptions(){
-    let val = "";
-    Object.keys(rates).forEach(code=>{
-        let str = `<option value="${code}">${code}</option>`;
-        val += str;
-    })
-    selects.forEach((s) => (s.innerHTML = val));
-}
-
-function convert(val, fromCurr, toCurr) {
-    let v = (val/rates[fromCurr]) * rates[toCurr];
-    let v1 = v.toFixed(4);
-    return v1 == 0.0 ? v.toString() : v1;
-}
-
-function displayRate(){
-    let v1 = sel1.value;
-    let v2 = sel2.value;
-
-    let val = convert(1, v1, v2);
-
-    rate1.innerHTML = `1 ${v1} bằng`;
-    rate2.innerHTML = `${val} ${v2}`; 
-}
-
-resultBtn.addEventListener("click", ()=>{
-    let fromCurr = sel1.value;
-    let fromVal = parseFloat(inpt1.value);
-    let toCurr = sel2.value;
-
-    if(isNaN(fromVal)){
-        alert("Enter a Number");
-    }else{
-        let cVal = convert(fromVal, fromCurr, toCurr);
-        inpt2.value = cVal;
+function tinh() {
+    let st = parseFloat(document.getElementById("stid").value);
+    let dv = document.getElementById("dvid").value;
+    
+    
+    let n = 0;
+    switch(dv) {
+        case "eur":
+            n = st / 26000;
+            break;
+        case "usd":
+            n = st / 22000;
+            break;
+        case "aud":
+            n = st/ 16000;
+            break;
     }
+
+    let kq = document.getElementById("kq2");
+    kq.innerHTML = `<h1 style="text-transform: uppercase">${st} VND = ${n.toFixed(2)} ${dv}</h1>`;
+}
+let resultBtn = document.querySelector(".btn");
+let inpt1 = document.getElementById("stid")
+resultBtn.addEventListener("click", ()=>{
+    let Val = parseFloat(inpt1.value);
+
+    if(isNaN(Val)){
+        alert("Enter a Number");
+    }
+
 });
 
-selects.forEach(s=>s.addEventListener("change", displayRate));
 
-document.querySelector(".swap").addEventListener("click", ()=>{
-    let in1 = inpt1.value;
-    let in2 = inpt2.value;
-    let op1 = sel1.value;
-    let op2 = sel2.value;
-
-    inpt2.value = in1;
-    inpt1.value = in2;
-
-    sel2.value = op1;
-    sel1.value = op2;
-
-    displayRate();
-});

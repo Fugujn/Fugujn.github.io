@@ -192,32 +192,173 @@
         </div>
     </section>
     <h1 class="request animate__animated animate__slideInLeft animate__delay-3s">QUY ĐỔI TIỀN TỆ</h1>
-    <div class="body">
-        <div class="container_current">
-            <h2 class="heading">Tôi có</h2>
-            <div class="rate">
-                <div class="rate1"></div>
-                <div class="rate2"></div>
-            </div>
-            <div class="main">
-                <div class="initial">
-                    <div class="options"><select></select></div>
-                    <div class="input"><input type="number"></div>
-                </div>
-                <i class="fa-solid fa-repeat swap"></i>
-                <div class="target">
-                    <div class="options"><select></select></div>
-                    <div class="input"><input disabled type="number"></div>
-                </div>
-            </div>
-            <button class="result">Result</button>
-        </div>
+    <section class="container_current">
+        <table>
+            <tr class="row">
+                <td class="text_curr">Số tiền:</td>
+                <td>
+                    <input id="stid" type="number">
+                </td>
+                <td class="text_curr">
+                    (VND)
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="text_curr">Đơn vị đổi:</td>
+                <td>
+                    <select id="dvid">
+                        <option value="eur">EUR</option>
+                        <option value="usd">USD</option>
+                        <option value="aud">AUD</option>
+                        <option value="krw">KRW</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="kq2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn" value="btn2" onclick="tinh()">Đổi</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <h1 class="request animate__animated animate__slideInLeft animate__delay-3s">Tỷ giá ngoại tệ</h1>    
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Loại tiền</th>
+                    <th colspan="3">Tỷ giá đồng việt nam</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Mua</th>
+                    <th>Bán</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td></td>
+                    <td>Tiền mặt</td>
+                    <td>Chuyển khoản</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Đô la Mỹ (USD)</p>
+                    </td>
+                    <td>23.250,00</td>
+                    <td>23.300,00</td>
+                    <td>23.590,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Đồng tiền Châu Âu (EUR)</p>
+                    </td>
+                    <td>23.062,00</td>
+                    <td>23.257,00</td>
+                    <td>23.680,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Bảng Anh (GBP)</p>
+                    </td>
+                    <td>26.997,00</td>
+                    <td>27.322,00</td>
+                    <td>28.176,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Yên Nhật (JPY)</p>
+                    </td>
+                    <td>166,65</td>
+                    <td>169,65</td>
+                    <td>173,35</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Franc Thụy Sĩ (CHF)</p>
+                    </td>
+                    <td>23.694,00</td>
+                    <td>23.964,00</td>
+                    <td>24.695,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Đô la Canada (CAD)</p>
+                    </td>
+                    <td>17.736,00</td>
+                    <td>17.936,00</td>
+                    <td>18.327,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Đô la Úc (AUD)</p>
+                    </td>
+                    <td>15.960,00</td>
+                    <td>16.145,00</td>
+                    <td>16.577,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Đô la Singapore (SGD)</p>
+                    </td>
+                    <td>16.498,00</td>
+                    <td>16.668,00</td>
+                    <td>17.036,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Đô la Hồng Kông (HKD)</p>
+                    </td>
+                    <td>2.907,00</td>
+                    <td>2.907,00</td>
+                    <td>3.068,00</td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Won Hàn Quốc (KRW)</p>
+                    </td>
+                    <td>14,54</td>
+                    <td>14,54</td>
+                    <td>21,29</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+    <div class="note">
+        <p>
+            Ghi chú: Nam A Bank không mua/ bán ngoại tệ đối với những loại ngoại tệ không có niêm yết tỷ giá
+        </p>
+    </div>
     </div>
     <!-- end main -->
     <!-- marquee -->
     <marquee width="100%">
-        Ngân hàng P&Q BANK chắc chắn đảm bảo an toàn, lợi ích khi đăng ký tài khoản và sử dụng thẻ tín dụng tại đây! Nơi
-        lý tưởng cho mọi gia đình!
+        Quy đổi tiền tệ, tạo lợi ích cho bạn và sử dụng thuận tiện hơn. Tin tưởng ở chúng tôi!
     </marquee>
     <div>
         <img src="./images/quangcao_2.png" alt="P&Q Bank">
@@ -362,7 +503,7 @@
     </a>
     <!-- button back-to-top -->
     <button id="back_to_top"><i class="fa-solid fa-angles-up"></i></button>
-    <script src="./js/calcular.js"></script>
+    <script src="./js/calcular.js"></s>
 </body>
 
 </html>
