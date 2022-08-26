@@ -67,6 +67,26 @@ img {
 }
 
 /*header*/
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+.animated_background {
+    background: linear-gradient(to right, #96ff03,
+            #fdfd1d, #fcb045);
+    background-size: 400% 400%;
+    animation: animate-background 5s infinite ease-in-out;
+}
+
 .sticky-top {
     position: sticky;
     top: 0;
@@ -76,7 +96,6 @@ img {
 }
 
 .header__top {
-    background: linear-gradient(90deg, rgba(241,238,33,1) 0%, rgba(255,253,43,1) 52%, rgba(223,223,15,1) 100%, rgba(222,242,45,1) 100%);
     padding: 10px;
     
 }

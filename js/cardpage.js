@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 2300)
     })
 })
+
 /*click Search form */
 let search = document.querySelector(".search_form");
 
