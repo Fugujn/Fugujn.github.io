@@ -75,7 +75,8 @@
     }
 
     .login_frame {
-        width: 85%;
+        width: 75%;
+        margin-left: 60px;
     }
 
     .user_zone {
@@ -87,7 +88,7 @@
     }
 
     .user_area {
-        width: 75%;
+        width: 100%;
         border-right: none;
         background-size: 100%;
     }
