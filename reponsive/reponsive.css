@@ -550,17 +550,9 @@
     .container_current {
         width: 98%;
     }
-    .input input {
-        width: 100%;
-        font-size: 1.2rem;
-    }
 }
 @media screen and (max-width: 290px) {
     .container_current {
         width: 95%;
-    }
-    .input input {
-        width: 100%;
-        font-size: 1rem;
     }
 }
