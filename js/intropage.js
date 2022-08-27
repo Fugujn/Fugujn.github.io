@@ -117,7 +117,7 @@ window.addEventListener('load', function () {
         addAtr(pos);
     }
 
-    let myInterval = setInterval(nextSlide, 4000);
+    let myInterval = setInterval(nextSlide, 8000);
 
     function myStop() {
         window.clearInterval(myInterval);
@@ -137,8 +137,8 @@ window.addEventListener('load', function () {
     })
     function resetInterval() {
         setTimeout(function () {
-            myInterval = setInterval(nextSlide, 4000);
-        }, 8000);
+            myInterval = setInterval(nextSlide, 8000);
+        }, 16000);
     }
     function addAtr(pos) {
         headLine.text(headLineItem[pos]);
@@ -152,4 +152,32 @@ window.addEventListener('load', function () {
             More[d++].style.display = "block";
         if (d == More.length) seeMore.style.display = "none";
     })
+    /*Back to top button*/
+    const backToTopbtn = document.querySelector("#back_to_top");
+    window.addEventListener("scroll", scrollFunction);
+
+    function scrollFunction() {
+        if (window.pageYOffset > 100) {  //show backtotop
+            if (!backToTopbtn.classList.contains("button_entrance")) {
+                backToTopbtn.classList.remove("button_exit");
+                backToTopbtn.classList.add("button_entrance");
+
+                backToTopbtn.style.display = "block";
+            }
+        }
+        else { //hidden backtotop
+            if (backToTopbtn.classList.contains("button_entrance")) {
+                backToTopbtn.classList.remove("button_entrance");
+                backToTopbtn.classList.add("button_exit");
+                setTimeout(function () {
+                    backToTopbtn.style.display = "none";
+                }, 200);
+            }
+        }
+        backToTopbtn.addEventListener("click", backtotop);
+
+        function backtotop() {
+            window.scrollTo(0, 0);
+        }
+    }
 })
