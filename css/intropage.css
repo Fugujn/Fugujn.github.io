@@ -728,3 +728,64 @@ ol {
     background-color: #fdfd1d;
     color: #0771b9;
 }
+
+#back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #0a5e98;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: backround-color, color;
+}
+
+#back_to_top:hover,
+#back_to_top:focus {
+    background-color: #71afd5;
+    color: white;
+}
+
+.button_entrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button_entrance;
+}
+
+/*fade in up*/
+@keyframes button_entrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.button_exit {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button_exit;
+}
+
+/*fade out down*/
+@keyframes button_exit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}

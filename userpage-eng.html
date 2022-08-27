@@ -36,10 +36,10 @@
             <span></span>
         </label>
         <ul class="menu__box">
-            <li><a class="menu__item" href="./index.html">Trang chủ</a></li>
-            <li><a class="menu__item" href="./intropage.html">Giới thiệu</a></li>
-            <li><a class="menu__item" href="./thepage.html">Thẻ ngân hàng</a></li>
-            <li><a class="menu__item" href="./calculatepage.html">Tỷ giá</a></li>
+            <li><a class="menu__item" href="./index.html">Home</a></li>
+            <li><a class="menu__item" href="./intropage.html">Introduce</a></li>
+            <li><a class="menu__item" href="./thepage.html">Card</a></li>
+            <li><a class="menu__item" href="./calculatepage.html">Exchange</a></li>
         </ul>
     </div>
     <div class="header">
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <p>
-                        Trung tâm hỗ trợ dịch vụ khách hàng:
+                        Customer Service Support Center:
                         <span class="selection_number_phone" data-fill-text="1900 1900">
                             1900 1900
                         </span>
@@ -64,17 +64,23 @@
             </div>
             <div>
                 <ul class="flex">
-                    <li class="selection_header_menu"><a href="./index.html" class="selection_header_menu_btn">Trang
-                            chủ</a>
+                    <li class="selection_header_menu">
+                        <a href="./index.html" class="selection_header_menu_btn">Home</a>
                     </li>
-                    <li class="selection_header_menu"><a href="./intropage.html" class="selection_header_menu_btn">Giới
-                            thiệu</a></li>
-                    <li class="selection_header_menu"><a href="./thepage.html" class="selection_header_menu_btn">Thẻ
-                            ngân hàng</a></li>
-                    <li class="selection_header_menu"><a href="./calculatepage.html"
-                            class="selection_header_menu_btn">Tỷ giá</a></li>
-                    <li class="selection_header_menu"><a href="./userpage-eng.html"
-                            class="selection_header_menu_btn"><img src="./images/Engish.png"></a></li>
+                    <li class="selection_header_menu">
+                        <a href="./intropage.html" class="selection_header_menu_btn">Introduce</a>
+                    </li>
+                    <li class="selection_header_menu">
+                        <a href="./thepage.html" class="selection_header_menu_btn">Card</a>
+                    </li>
+                    <li class="selection_header_menu">
+                        <a href="./calculatepage.html" class="selection_header_menu_btn">Exchange</a>
+                    </li>
+                    <li class="selection_header_menu">
+                        <a href="./userpage.html" class="selection_header_menu_btn">
+                            <img src="./images/vn.gif">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -85,10 +91,10 @@
             <div class="dn_btn_content_box">
                 <div id="bg_btn"></div>
                 <button type="button" class="toggle_btn" onclick="login()">
-                    Đăng nhập
+                    Log in
                 </button>
                 <button type="button" class="toggle_btn" onclick="register()">
-                    Đăng ký
+                    Register
                 </button>
             </div>
             <div class="social_icons">
@@ -97,17 +103,17 @@
                 <img src="./images/tw.png" alt="">
             </div>
             <form id="login" class="input_group">
-                <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
-                <input type="text" class="input_field" placeholder="Mật khẩu" required>
-                <input type="checkbox" class="chech_box"><span>Ghi nhớ mật khẩu</span>
-                <button type="submit" class="submit_btn">Đăng nhập</button>
+                <input type="text" class="input_field" placeholder="Username" required>
+                <input type="text" class="input_field" placeholder="Password" required>
+                <input type="checkbox" class="chech_box"><span>Remember password</span>
+                <button type="submit" class="submit_btn">Login</button>
             </form>
             <form id="register" class="input_group">
-                <input type="text" class="input_field" placeholder="Tên đăng nhập" required>
+                <input type="text" class="input_field" placeholder="Username" required>
                 <input type="email" class="input_field" placeholder="Gmail" required>
-                <input type="text" class="input_field" placeholder="Mật khẩu" required>
-                <input type="checkbox" class="chech_box" required><span>Tôi đồng ý với điều khoản của ngân hàng</span>
-                <button type="submit" class="submit_btn">Đăng ký</button>
+                <input type="text" class="input_field" placeholder="Password" required>
+                <input type="checkbox" class="chech_box" required><span>I agree to the bank's terms</span>
+                <button type="submit" class="submit_btn">Subscribe</button>
             </form>
         </div>
     </div>
@@ -115,7 +121,8 @@
         <div class="content_menu_frame">
             <div class="border flex">
                 <a href="" class="content_menu_btn">
-                    <span>Tỉ giá/Lãi xuất</span>
+                    <span>
+                        Interest rate</span>
                 </a>
             </div>
             <div class="border flex">
@@ -125,29 +132,31 @@
             </div>
             <div class="border flex">
                 <a href="" class="content_menu_btn">
-                    <span>Hỗ trợ</span>
+                    <span>
+                        Support</span>
                 </a>
             </div>
         </div>
         <div class="main_content">
             <div class="login_frame">
                 <div class="login_title flex">
-                    <h1>Đăng nhập dịch vụ <i class="fa-solid fa-power-off"></i></h1>
+                    <h1>Service Login <i class="fa-solid fa-power-off"></i></h1>
                 </div>
                 <div class="user_zone wrap">
                     <div class="user_input flex">
-                        <div class="user_area flex">
+                        <div class="user_area flex" style="background-image: url(../images/control_english.png);">
                             <button class="dn_btn" id="dn_btn"></button>
                         </div>
                         <div class="user_warning">
-                            <h1 class="text">Công cụ</h1>
-                            <a href="" class="href_text">Tra cứu bảo lãnh</a>
-                            <h1 class="text">Trợ giúp</h1>
+                            <h1 class="text">Tools</h1>
+                            <a href="" class="href_text">Look up guarantee</a>
+                            <h1 class="text">
+                                Help</h1>
                             <button class="add_document_btn"
-                                onclick="location.href='./link/CanhBaoGiaoDichGiaMaoDichVuNganHangDienTu.pdf'"><span>Khuyến
-                                    Cáo Bảo Mật Thông Tin</span></button>
+                                onclick="location.href='./link/CanhBaoGiaoDichGiaMaoDichVuNganHangDienTu.pdf'"><span>Promotion
+                                    Information Security Report</span></button>
                             <button class="add_document_btn"
-                                onclick="location.href='./link/PQBank_clearCache.doc'"><span>Xóa cache trên web
+                                onclick="location.href='./link/PQBank_clearCache.doc'"><span>Clear web cache
                                     browser</span></button>
                         </div>
                     </div>
@@ -170,8 +179,8 @@
         </div>
     </div>
     <marquee width="100%">
-        Ngân hàng P&Q BANK chắc chắn đảm bảo an toàn, lợi ích khi đăng ký tài khoản và sử dụng thẻ tín dụng tại đây! Nơi
-        lý tưởng cho mọi gia đình!
+        P&Q BANK certainly ensures safety and benefits when registering an account and using a credit card here! Place
+        Ideal for every family!
     </marquee>
     <div>
         <img src="./images/quangcao_2.png" alt="P&Q Bank">
@@ -181,20 +190,20 @@
             <div class="row_install">
                 <div class="col25_sign_install">
                     <div class="sign_up_email">
-                        <h3>Đăng ký nhận thông tin từ P&Q</h3>
+                        <h3>Sign up to receive information from P&Q</h3>
                     </div>
                 </div>
                 <div class="col50_sign_install">
                     <div class="sign_up_email_text">
-                        <input type="email" id="email" placeholder="Email của bạn" required>
+                        <input type="email" id="email" placeholder="Your email" required>
                         <button class="sign_up_button">
-                            <a href="#">ĐĂNG KÝ</a>
+                            <a href="#">REGISTER</a>
                         </button>
                     </div>
                 </div>
                 <div class="col25_sign_install">
                     <div class="install_banking">
-                        <h3>Cài đặt ứng dụng P&Q Internet</h3>
+                        <h3>Install P&Q Internet App</h3>
                         <img src="./images/ios_app.png" alt="IOS">
                         <img src="./images/googleplay_app.png" alt="Android">
                     </div>
@@ -206,52 +215,52 @@
         <div class="main_footer">
             <div class="row_footer">
                 <div class="col_footer">
-                    <h4>Giới thiệu</h4>
+                    <h4>Introduction</h4>
                     <ul>
-                        <li><a href=" "><i class="arrow right"></i>Tổng quan</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sơ đồ tổ chức</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sứ mệnh – Tầm nhìn</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Cơ cấu quản trị Ngân hàng</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Ban lãnh đạo P&Q Bank</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Danh hiệu Thành tích</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Overview</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Organization chart</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Mission – Vision</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Bank's governance structure</a></li>
+                        <li><a href=" "><i class="arrow right"></i>P&Q Bank Board of Directors</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Title of Achievement</a></li>
                     </ul>
                 </div>
                 <div class="col_footer">
-                    <h4>Cá nhân</h4>
+                    <h4>Personal</h4>
                     <ul>
-                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiết kiệm</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tín dụng</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sản phẩm thẻ</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Ưu đãi thẻ</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Bảo hiểm</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Dịch vụ chuyển, nhận tiền</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Promotions</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Deposit products</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Effective products</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Credit products</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tag products</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Card Offer</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Insurance</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Money transfer service</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Digital Bank</a></li>
                     </ul>
                 </div>
                 <div class="col_footer">
-                    <h4>Doanh nghiệp</h4>
+                    <h4>Business</h4>
                     <ul>
-                        <li><a href=" "><i class="arrow right"></i>Chương trình khuyến mãi</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Sản phẩm tiền gửi</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Tín dụng doanh nghiệp</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Bảo lãnh</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Thanh toán quốc tế</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Ngân hàng Số</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Promotions</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Deposit products</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Corporate Credit</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Guarantee</a></li>
+                        <li><a href=" "><i class="arrow right"></i>International payments</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Digital Bank</a></li>
                     </ul>
                 </div>
                 <div class="col_footer">
-                    <h4>Truy cập nhanh</h4>
+                    <h4>Fast access</h4>
                     <ul>
-                        <li><a href=" "><i class="arrow right"></i>Lãi suất</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Biểu phí - Hạn mức</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Tỷ giá ngoại tệ - giá vàng</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Tài liệu - biểu mẫu</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Tra cứu Hóa đơn điện tử</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Tra cứu Thư bảo lãnh</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Interest</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Tariff - Limit</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Exchange rate - gold price</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Document - form</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Look up E-Invoice</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Look up Letter of Guarantee</a></li>
                         <li><a href=" "><i class="arrow right"></i>Internet Banking</a></li>
-                        <li><a href=" "><i class="arrow right"></i>Mạng lưới</a></li>
+                        <li><a href=" "><i class="arrow right"></i>Network</a></li>
                     </ul>
                 </div>
             </div>
@@ -277,7 +286,7 @@
                     </div>
                     <div class="col25_footer_2">
                         <div>
-                            <h4>Liên kết nhanh</h4>
+                            <h4>Quick link</h4>
                             <div class="social_link">
                                 <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                                 <a href=""><i class="fa-brands fa-youtube"></i></a>
@@ -292,7 +301,8 @@
                 <div class="row_copyright">
                     <div class="col25_copyright">
                         <a href="">
-                            <p>Điều khoản & Điều kiện sử dụng</p>
+                            <p>
+                                Terms & Conditions of Use</p>
                         </a>
                     </div>
                     <div class="col75_copyright">
