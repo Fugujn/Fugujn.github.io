@@ -43,7 +43,6 @@ function tinh() {
     let st = parseFloat(document.getElementById("stid").value);
     let dv = document.getElementById("dvid").value;
     
-    
     let n = 0;
     switch(dv) {
         case "eur":
